@@ -82,7 +82,7 @@ video {
 }
 
 .text-shine {
-    background: linear-gradient(90deg, #AC7F5E 30%, #f6f3e5 50%, #AC7F5E 70%);
+    background: linear-gradient(90deg, #1a7e6c 30%, #f6f3e5 50%, #1a7e6c 70%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -98,3 +98,9 @@ video {
         background-position: 200% center;
     }
 }
+
+
+
+
+
+

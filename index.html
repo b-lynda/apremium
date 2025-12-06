@@ -13,94 +13,91 @@
     <title>ANYX PREMIUM | Accueil</title>
   </head>
   <body class="m-0 p-0">
-    <nav
-      class="relative z-50 max-w-7xl mx-auto px-4 py-4 md:flex justify-between items-center"
-    >
-      <div>
-        <img
-          src="/assets/images/logo-apremiumg-long.png"
-          alt="logo"
-          class="w-30 md:w-[200px]"
-        />
-      </div>
-      <div class="flex justify-between items-center">
-        <ul class="flex gap-8 mr-8 items-center">
-          <li>
-            <a href="#" class="hover:text-[#AC7F5E] transition-colors"
-              >A propos</a
-            >
-          </li>
+   <nav class="sticky md:sticky top-0 z-50 max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+  <div>
+    <img
+      src="/assets/images/logo-apremiumg-long.png"
+      alt="logo"
+      class="w-40 md:w-[200px]"
+    />
+  </div>
 
-          <li class="relative dropdown-hover">
-            <div
-              class="inline-flex items-center gap-2 cursor-pointer hover:text-[#AC7F5E] transition-colors"
-            >
-              <span>Nos Services</span>
-              <svg
-                class="w-4 h-4 transition-transform dropdown-arrow"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </div>
+  <!-- Menu Desktop -->
+  <div class="hidden md:flex justify-between items-center w-fill">
+    <ul class="flex gap-8 mr-8 items-center">
+      <li class="relative dropdown-hover">
+        <div class="inline-flex items-center gap-2 cursor-pointer hover:font-bold">
+          <span>A propos</span>
+          <svg
+            class="w-4 h-4 transition-transform dropdown-arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
+        <div class="dropdown-menu absolute left-0 mt-4 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible transition-all duration-200 z-50">
+          <div class="py-2">
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Qui sommes nous ?</a>
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Zones d'intervention</a>
+          </div>
+        </div>
+      </li>
 
-            <!-- Dropdown menu -->
-            <div
-              class="dropdown-menu absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible transition-all duration-200 z-50"
-            >
-              <div class="py-2">
-                <a
-                  href="#"
-                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                  >Tourisme</a
-                >
-                <a
-                  href="#"
-                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                  >Copro-Syndic</a
-                >
-                <a
-                  href="#"
-                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                  >Tertiaire</a
-                >
-                <a
-                  href="#"
-                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                  >Industrie</a
-                >
-                <a
-                  href="#"
-                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                  >Désinfection</a
-                >
-                <a
-                  href="#"
-                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                  >Travaux publics</a
-                >
-              </div>
-            </div>
-          </li>
-        </ul>
-        <a
-          href="tel:+33988327743"
-          class="btn-ripple flex items-center justify-center bg-[#244163] text-white rounded-lg w-fit py-3 px-6 text-base font-bold cursor-pointer relative overflow-hidden"
-        >
-          <span class="relative z-10">Contactez-nous</span>
-        </a>
-      </div>
-    </nav>
+      <li class="relative dropdown-hover">
+        <div class="inline-flex items-center gap-2 cursor-pointer hover:font-bold">
+          <span>Nos Services</span>
+          <svg
+            class="w-4 h-4 transition-transform dropdown-arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
 
-    <section class="relative h-screen flex items-center overflow-hidden -mt-20">
+        <!-- Dropdown menu -->
+        <div class="dropdown-menu absolute left-0 mt-4 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible transition-all duration-200 z-50">
+          <div class="py-2">
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Tourisme</a>
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Copro-Syndic</a>
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Tertiaire</a>
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Industrie</a>
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Désinfection</a>
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Travaux publics</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    
+    <a href="tel:+33988327743" class="btn-ripple flex items-center justify-center bg-[#244163] text-white rounded-lg w-fit py-3 px-6 text-base font-bold cursor-pointer relative overflow-hidden">
+      <span class="relative z-10">Contactez-nous</span>
+    </a>
+  </div>
+
+  <!-- Burger Menu -->
+  <button class="w-10 h-[30px] flex flex-col justify-between cursor-pointer bg-transparent border-none p-0 md:hidden hover:opacity-80 transition-opacity">
+    <span class="block h-1 bg-[#244163] rounded-full w-[80%] ml-auto transition-all duration-300"></span>
+    <span class="block h-1 bg-[#244163] rounded-full w-full transition-all duration-300"></span>
+    <span class="block h-1 bg-[#244163] rounded-full w-[60%] transition-all duration-300"></span>
+  </button>
+</nav>
+    <!-- section hero with video -->
+    <section class="relative h-screen flex items-center overflow-hidden -mt-30">
       <video
         autoplay
         muted
@@ -112,27 +109,31 @@
         <source
           src="/assets/videos/2137084_Bed_Hotel_1920x1080.mp4"
           type="video/mp4"
+          a
         />
       </video>
 
       <!-- Overlay sombre -->
-      <div class="absolute top-0 left-0 w-full h-full bg-slate-200/30"></div>
+      <div class="absolute top-0 left-0 w-full h-full bg-white/75"></div>
 
-      <!-- Contenu aligné comme la nav -->
       <div class="relative z-10 w-full max-w-7xl mx-auto px-4">
-        <div class="flex flex-col items-start gap-2">
-          <h1 class="text-5xl md:text-5xl font-bold">
-            Ensemble faisons <span class="text-[#AC7F5E] font-alex-brush text-shine text-6xl"> briller</span> vos
-            espaces
+        <div class="flex flex-col w-fit md:items-start gap-2">
+          <h1 class="text-center text-5xl text-[#244163] md:text-5xl md:text-left font-bold">
+            Ensemble faisons<br>
+            <span class="text-6xl text-shine  font-alex-brush md:text-6xl">
+              briller
+              </span>
+            vos espaces
           </h1>
-          <p class="text-lg md:text-xl max-w-2xl">
-            Parce qu'un environnement propre et sain est la clé d'une expérience
-            réussie, nous mettons notre expertise au service de votre
+          <p class="text-[#244163] py-2 text-center font-medium md:text-xl md:text-left max-w-2xl">
+            Parce qu'un environnement propre et sain est la clé d'une <span class="font-bold">expérience
+            réussie</span>, nous mettons notre expertise au service de votre
             tranquillité.
           </p>
           <a
             href="#"
-            class="rounded-lg bg-[#AC7F5E] w-fit py-3 px-6 text-white font-bold hover:bg-[#8F6A4F] transition-all"
+            class="text-center rounded-lg bg-[#1a7e6c] w-full py-3 px-6
+             text-white font-bold md:w-fit hover:bg-[#299a85] transition-all"
           >
             En savoir plus
           </a>
