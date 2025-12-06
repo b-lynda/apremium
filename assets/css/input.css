@@ -1,4 +1,6 @@
 @import "tailwindcss";
+
+
 .font-alex-brush {
     font-family: 'Alex Brush', cursive;
 }
@@ -97,6 +99,18 @@ video {
     100% {
         background-position: 200% center;
     }
+}
+
+.video-fade::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(to top, white, transparent);
+  pointer-events: none;
+  z-index: 1;
 }
 
 
