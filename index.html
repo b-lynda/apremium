@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/assets/css/output.css" rel="stylesheet" />
+    <title>ANYX PREMIUM | Accueil</title>
+  </head>
+  <body class="m-0 p-0">
+    <nav
+      class="relative z-50 max-w-7xl mx-auto px-4 py-4 md:flex justify-between items-center"
+    >
+      <div>
+        <img
+          src="/assets/images/logo-apremiumg-long.png"
+          alt="logo"
+          class="w-30 md:w-[200px]"
+        />
+      </div>
+      <div class="flex justify-between items-center">
+        <ul class="flex gap-8 mr-8 items-center">
+          <li>
+            <a href="#" class="hover:text-[#AC7F5E] transition-colors"
+              >A propos</a
+            >
+          </li>
+
+          <li class="relative dropdown-hover">
+            <div
+              class="inline-flex items-center gap-2 cursor-pointer hover:text-[#AC7F5E] transition-colors"
+            >
+              <span>Nos Services</span>
+              <svg
+                class="w-4 h-4 transition-transform dropdown-arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+
+            <!-- Dropdown menu -->
+            <div
+              class="dropdown-menu absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible transition-all duration-200 z-50"
+            >
+              <div class="py-2">
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                  >Tourisme</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                  >Copro-Syndic</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                  >Tertiaire</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                  >Industrie</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                  >Désinfection</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                  >Travaux publics</a
+                >
+              </div>
+            </div>
+          </li>
+        </ul>
+        <a
+          href="tel:+33988327743"
+          class="btn-ripple flex items-center justify-center bg-[#244163] text-white rounded-lg w-fit py-3 px-6 text-base font-bold cursor-pointer relative overflow-hidden"
+        >
+          <span class="relative z-10">Contactez-nous</span>
+        </a>
+      </div>
+    </nav>
+
+    <section class="relative h-screen flex items-center overflow-hidden -mt-20">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="/assets/images/hero-poster.jpg"
+        class="absolute top-0 left-0 w-full h-full object-cover"
+      >
+        <source
+          src="/assets/videos/2137084_Bed_Hotel_1920x1080.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <!-- Overlay sombre -->
+      <div class="absolute top-0 left-0 w-full h-full bg-slate-200/30"></div>
+
+      <!-- Contenu aligné comme la nav -->
+      <div class="relative z-10 w-full max-w-7xl mx-auto px-4">
+        <div class="flex flex-col items-start gap-2">
+          <h1 class="text-5xl md:text-5xl font-bold">
+            Ensemble faisons <span class="text-[#AC7F5E] font-alex-brush text-shine text-6xl"> briller</span> vos
+            espaces
+          </h1>
+          <p class="text-lg md:text-xl max-w-2xl">
+            Parce qu'un environnement propre et sain est la clé d'une expérience
+            réussie, nous mettons notre expertise au service de votre
+            tranquillité.
+          </p>
+          <a
+            href="#"
+            class="rounded-lg bg-[#AC7F5E] w-fit py-3 px-6 text-white font-bold hover:bg-[#8F6A4F] transition-all"
+          >
+            En savoir plus
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

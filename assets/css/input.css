@@ -1,0 +1,100 @@
+@import "tailwindcss";
+.font-alex-brush {
+    font-family: 'Alex Brush', cursive;
+}
+
+/* Dropdown hover */
+.dropdown-hover:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-hover:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+/* Optimisation vidéo */
+video {
+    pointer-events: none;
+}
+
+/* Animation fade-in pour la vidéo */
+video {
+    animation: videoFadeIn 1.5s ease-in;
+}
+
+@keyframes videoFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Ripple button effect */
+@keyframes ripple1 {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+@keyframes ripple2 {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        width: 350px;
+        height: 350px;
+        opacity: 0;
+    }
+}
+
+.btn-ripple::before,
+.btn-ripple::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 2px solid #ffffff;  /* ← Blanc pour être visible sur fond bleu */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.btn-ripple:hover::before {
+    animation: ripple1 1.5s ease-out;
+}
+
+.btn-ripple:hover::after {
+    animation: ripple2 1.5s ease-out 0.3s;
+}
+
+.text-shine {
+    background: linear-gradient(90deg, #AC7F5E 30%, #f6f3e5 50%, #AC7F5E 70%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 200% center;
+    }
+}
