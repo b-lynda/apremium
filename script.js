@@ -8,3 +8,7 @@
           nav.classList.remove('bg-white', 'shadow-md');
         }
       });
+
+    const scrollContent = document.getElementById('scrollContent');
+    scrollContent.innerHTML += scrollContent.innerHTML;
+  
