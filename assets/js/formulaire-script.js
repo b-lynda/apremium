@@ -11,17 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const originalText = button.textContent;
             const originalClasses = button.className;
             
-            // Vérifier que la case RGPD est cochée
-            const rgpdCheckbox = document.getElementById('rgpd');
-            if (!rgpdCheckbox.checked) {
-                alert('Vous devez accepter la politique de confidentialité pour envoyer le formulaire.');
-                return;
-            }
-            
             // Désactiver le bouton pendant l'envoi
             button.disabled = true;
             button.textContent = 'Envoi en cours...';
-            button.className = button.className.replace('hover:-translate-y-0.5', '');
+            button.className = button.className.replace('hover:-translate-y-1', '');
             
             // Envoi des données
             fetch('contact.php', {
@@ -41,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     button.className = originalClasses.replace('from-[#1a7e6c] to-[#244163]', 'from-green-500 to-green-600');
                     
                     setTimeout(() => {
+                        // Message de confirmation
                         alert(data.message || 'Merci pour votre demande ! Nous vous recontacterons sous 24h.');
                         
                         // Réinitialiser le formulaire
@@ -56,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => {
                 console.error('Erreur:', error);
                 
+                // Message d'erreur
                 alert('Une erreur est survenue lors de l\'envoi. Veuillez réessayer ou nous contacter directement par téléphone.');
                 
                 // Réinitialiser le bouton
