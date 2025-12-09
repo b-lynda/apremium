@@ -15,9 +15,10 @@ $nom = isset($_POST['nom']) ? htmlspecialchars(trim($_POST['nom'])) : '';
 $email = isset($_POST['email']) ? htmlspecialchars(trim($_POST['email'])) : '';
 $tel = isset($_POST['tel']) ? htmlspecialchars(trim($_POST['tel'])) : '';
 $service = isset($_POST['service']) ? htmlspecialchars(trim($_POST['service'])) : '';
+$message = isset($_POST['message']) ? htmlspecialchars(trim($_POST['message'])) : '';
 
 // Validation des champs obligatoires
-if (empty($prenom) || empty($nom) || empty($email) || empty($tel) || empty($service)) {
+if (empty($prenom) || empty($nom) || empty($email) || empty($tel) || empty($service) || empty($message)) {
     http_response_code(400);
     echo json_encode(['success' => false, 'message' => 'Tous les champs obligatoires doivent être remplis']);
     exit;
@@ -31,7 +32,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 // Configuration de l'email
-$to = "contact@a-premium.fr"; // REMPLACE PAR TON EMAIL
+$to = "contact@a-premium.fr"; 
 $subject = "Nouvelle demande de contact - " . $service;
 
 // Conversion du type de service en français lisible
@@ -69,7 +70,7 @@ $body = "
 <body>
     <div class='container'>
         <div class='header'>
-            <h2>ANYX PREMIUM</h2>
+            <h2>A+ PREMIUM GROUP</h2>
             <p>Nouvelle demande de contact</p>
         </div>
         <div class='content'>
@@ -92,9 +93,14 @@ $body = "
                 <div class='field-label'>Type de prestation</div>
                 <div class='field-value'>$service_libelle</div>
             </div>
+            
+            <div class='field'>
+                <div class='field-label'>Message</div>
+                <div class='field-value'>" . nl2br($message) . "</div>
+            </div>
         </div>
         <div class='footer'>
-            <p>Cet email a été envoyé depuis le formulaire de contact du site ANYX PREMIUM</p>
+            <p>Cet email a été envoyé depuis le formulaire de contact du site A PREMIUM GROUP</p>
         </div>
     </div>
 </body>
