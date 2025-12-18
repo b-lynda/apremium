@@ -133,21 +133,138 @@
           </a>
         </div>
 
-        <button
+        <button id="mobileHamburger"
           class="w-10 h-[30px] flex flex-col justify-between cursor-pointer bg-transparent border-none p-0 md:hidden hover:opacity-80 transition-opacity"
         >
           <span
-            class="block h-1 bg-[#244163] rounded-full w-[80%] ml-auto transition-all duration-300"
+            class="hamburger-line block h-1 bg-[#244163] rounded-full w-[80%] ml-auto transition-all duration-300"
           ></span>
           <span
-            class="block h-1 bg-[#244163] rounded-full w-full transition-all duration-300"
+            class="hamburger-line block h-1 bg-[#244163] rounded-full w-full transition-all duration-300"
           ></span>
           <span
-            class="block h-1 bg-[#244163] rounded-full w-[60%] transition-all duration-300"
+            class="hamburger-line block h-1 bg-[#244163] rounded-full w-[60%] transition-all duration-300"
           ></span>
         </button>
+          
       </div>
     </nav>
+    <div id="menuMinimal" class="fixed inset-0 z-40 pointer-events-none">
+        
+        <!-- L'overlay (fond sombre) -->
+        <div id="overlay" class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300"></div>
+        
+        <!-- Le panneau blanc qui glisse -->
+        <div id="panel" class="absolute top-0 left-0 h-full w-72 bg-white shadow-2xl -translate-x-full transition-transform duration-300">
+            
+            <!-- Header du menu -->
+<div class="p-8 border-b border-gray-100 flex items-center justify-between">
+    <h3 class="text-2xl font-bold text-[#244163]">Menu</h3>
+    
+    <button id="btnClose" class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 hover:border-[#244163] hover:bg-[#244163] transition-all group">
+        <svg class="w-5 h-5 text-gray-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+    </button>
+</div>
+ 
+<!-- Navigation avec flèches -->
+<nav class="p-6 space-y-3">
+    <a href="#" class="menu-link flex items-center gap-3 px-4 py-3 text-gray-700 transition-all duration-200">
+        <span class="font-medium">Accueil</span>
+    </a>
+    
+    <ul>
+        <li class="menu-link">
+        <!-- Lien parent cliquable -->
+        <button id="dropdown-apropos" class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition-all duration-200">
+            <span class="font-medium">À propos</span>
+            <!-- Flèche qui tourne -->
+            <svg class="dropdown-arrow w-4 h-4 text-gray-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+        </button>
+        
+        <!-- Sous-menu (caché par défaut) -->
+        <ul id="submenu-apropos" class="ml-4 space-y-2 max-h-0 overflow-hidden transition-all duration-300">
+            <li>
+                <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
+                    Qui sommes nous ?
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
+                    Zones d'intervention
+                </a>
+            </li>
+        </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li class="menu-link">
+        <!-- Lien parent cliquable -->
+        <button id="dropdown-services" class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition-all duration-200">
+            <span class="font-medium">Nos services</span>
+            <!-- Flèche qui tourne -->
+            <svg class="dropdown-arrow w-4 h-4 text-gray-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+        </button>
+        
+        <!-- Sous-menu (caché par défaut) -->
+        <ul id="submenu-services" class="ml-4 space-y-2 max-h-0 overflow-hidden transition-all duration-300">
+            <li>
+                <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
+                    Tourisme
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
+                    Tertiaire
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
+                    Copro-Syndic
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
+                    Industrie
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
+                    Désinfection
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
+    Travaux publics            </li>
+        </ul>
+        </li>
+    </ul>  
+   
+</nav>
+
+<div class="absolute bottom-8 left-0 right-0 space-y-6">
+    
+    <div class="flex items-center gap-6">
+        
+        
+    </div>
+    
+    <div class="px-6">
+        <a href="tel:+33988327743" class="block w-full py-4 text-center bg-[#244163] text-white rounded-xl font-bold shadow-lg hover:bg-[#1a3550] transition-colors">
+            Contactez-nous
+        </a>
+    </div>
+    
+</div>
+
+</div>
+    </div>
+    
     <!---- Hero Section ---->
     <section
       class="relative video-fade flex items-center overflow-hidden -mt-30"
@@ -760,7 +877,7 @@
         </div>
     </div>
 
-    <div class="relative w-full flex items-end pt-0" style="min-height: 300px;">
+    <div class="relative w-full flex items-end pt-0" style="min-height: 350px;">
         <div class="relative w-full p-4 md:p-8 z-10">
             <div class="max-w-7xl mx-auto">
                 <div class="flex flex-col w-full items-center md:items-start">
