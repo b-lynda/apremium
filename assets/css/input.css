@@ -190,3 +190,37 @@ video {
         .animate-slide-right {
             animation: slideRight 0.8s ease-out 0.2s forwards;
         }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========== Menu Mobile Custom ========== */
+@layer components {
+    #panel {
+        pointer-events: auto;
+        width: 320px;
+        max-width: 90vw;
+    }
+    
+    #panel * {
+        pointer-events: auto;
+    }
+    
+    /* États du menu */
+    .menu-closed {
+        transform: translateX(-100%);
+    }
+    
+    .menu-open {
+        transform: translateX(0);
+    }
+    
+    /* États de l'overlay */
+    .overlay-hidden {
+        opacity: 0;
+    }
+    
+    .overlay-visible {
+        opacity: 1;
+    }
+}

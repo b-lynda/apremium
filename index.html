@@ -10,14 +10,26 @@
       rel="stylesheet"
     />
     <link href="/assets/css/output.css" rel="stylesheet" />
+    
+    <!-- CSS pour forcer les transforms si Tailwind ne les compile pas -->
+    <style>
+      .-translate-x-full {
+        transform: translateX(-100%) !important;
+      }
+      
+      .translate-x-0 {
+        transform: translateX(0) !important;
+      }
+    </style>
+    
     <title>A PREMIUM GROUP | Accueil</title>
   </head>
   <body class="m-0 p-0">
+    
     <!--- Navbar ---->
-    <nav class="sticky top-0 z-50 transition-all duration-300">
-      <div
-        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
-      >
+<nav class="sticky top-0 z-40 transition-all duration-300">      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        
+        <!-- Logo -->
         <div>
           <img
             src="/assets/images/logo-apremiumg-long.png"
@@ -26,12 +38,13 @@
           />
         </div>
 
+        <!-- Menu Desktop -->
         <div class="hidden md:flex justify-between items-center w-fill">
           <ul class="flex gap-8 mr-8 items-center">
+            
+            <!-- Dropdown À propos -->
             <li class="relative dropdown-hover">
-              <div
-                class="inline-flex items-center gap-2 cursor-pointer hover:font-bold"
-              >
+              <div class="inline-flex items-center gap-2 cursor-pointer hover:font-bold">
                 <span>A propos</span>
                 <svg
                   class="w-4 h-4 transition-transform dropdown-arrow"
@@ -48,28 +61,17 @@
                   />
                 </svg>
               </div>
-              <div
-                class="dropdown-menu absolute left-0 mt-4 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible transition-all duration-200 z-50"
-              >
+              <div class="dropdown-menu absolute left-0 mt-4 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible transition-all duration-200 z-50">
                 <div class="py-2">
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                    >Qui sommes nous ?</a
-                  >
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                    >Zones d'intervention</a
-                  >
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Qui sommes nous ?</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Zones d'intervention</a>
                 </div>
               </div>
             </li>
 
+            <!-- Dropdown Nos Services -->
             <li class="relative dropdown-hover">
-              <div
-                class="inline-flex items-center gap-2 cursor-pointer hover:font-bold"
-              >
+              <div class="inline-flex items-center gap-2 cursor-pointer hover:font-bold">
                 <span>Nos Services</span>
                 <svg
                   class="w-4 h-4 transition-transform dropdown-arrow"
@@ -86,45 +88,20 @@
                   />
                 </svg>
               </div>
-              <div
-                class="dropdown-menu absolute left-0 mt-4 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible transition-all duration-200 z-50"
-              >
+              <div class="dropdown-menu absolute left-0 mt-4 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible transition-all duration-200 z-50">
                 <div class="py-2">
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                    >Tourisme</a
-                  >
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                    >Copro-Syndic</a
-                  >
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                    >Tertiaire</a
-                  >
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                    >Industrie</a
-                  >
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                    >Désinfection</a
-                  >
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                    >Travaux publics</a
-                  >
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Tourisme</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Copro-Syndic</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Tertiaire</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Industrie</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Désinfection</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Travaux publics</a>
                 </div>
               </div>
             </li>
           </ul>
 
+          <!-- Bouton Contact Desktop -->
           <a
             href="tel:+33988327743"
             class="btn-ripple flex items-center justify-center bg-[#244163] text-white rounded-lg w-fit py-3 px-6 text-base font-bold cursor-pointer relative overflow-hidden"
@@ -133,142 +110,130 @@
           </a>
         </div>
 
-        <button id="mobileHamburger"
+        <!-- Bouton Hamburger Mobile -->
+        <button 
+          id="menu-btn"
           class="w-10 h-[30px] flex flex-col justify-between cursor-pointer bg-transparent border-none p-0 md:hidden hover:opacity-80 transition-opacity"
         >
-          <span
-            class="hamburger-line block h-1 bg-[#244163] rounded-full w-[80%] ml-auto transition-all duration-300"
-          ></span>
-          <span
-            class="hamburger-line block h-1 bg-[#244163] rounded-full w-full transition-all duration-300"
-          ></span>
-          <span
-            class="hamburger-line block h-1 bg-[#244163] rounded-full w-[60%] transition-all duration-300"
-          ></span>
+          <span class="hamburger-line block h-1 bg-[#244163] rounded-full w-[80%] ml-auto transition-all duration-300"></span>
+          <span class="hamburger-line block h-1 bg-[#244163] rounded-full w-full transition-all duration-300"></span>
+          <span class="hamburger-line block h-1 bg-[#244163] rounded-full w-[60%] transition-all duration-300"></span>
         </button>
           
       </div>
     </nav>
-    <div id="menuMinimal" class="fixed inset-0 z-40 pointer-events-none">
-        
-        <!-- L'overlay (fond sombre) -->
-        <div id="overlay" class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300"></div>
-        
-        <!-- Le panneau blanc qui glisse -->
-        <div id="panel" class="absolute top-0 left-0 h-full w-72 bg-white shadow-2xl -translate-x-full transition-transform duration-300">
-            
+
+    <!-- Menu Mobile -->
+<div id="menu-minimal" class="fixed inset-0 z-[9999] pointer-events-none md:hidden">
+        <!-- Overlay (fond noir transparent) -->
+    <div id="overlay" class="absolute inset-0 bg-black/50 overlay-hidden transition-opacity duration-300 z-[9998]"></div>
+        <!-- Panel blanc qui glisse -->
+    <div id="panel" class="absolute top-0 left-0 h-full bg-white shadow-2xl menu-closed transition-transform duration-300 z-[9999]">
             <!-- Header du menu -->
-<div class="p-8 border-b border-gray-100 flex items-center justify-between">
-    <h3 class="text-2xl font-bold text-[#244163]">Menu</h3>
-    
-    <button id="btnClose" class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 hover:border-[#244163] hover:bg-[#244163] transition-all group">
-        <svg class="w-5 h-5 text-gray-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-        </svg>
-    </button>
-</div>
- 
-<!-- Navigation avec flèches -->
-<nav class="p-6 space-y-3">
-    <a href="#" class="menu-link flex items-center gap-3 px-4 py-3 text-gray-700 transition-all duration-200">
-        <span class="font-medium">Accueil</span>
-    </a>
-    
-    <ul>
-        <li class="menu-link">
-        <!-- Lien parent cliquable -->
-        <button id="dropdown-apropos" class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition-all duration-200">
-            <span class="font-medium">À propos</span>
-            <!-- Flèche qui tourne -->
-            <svg class="dropdown-arrow w-4 h-4 text-gray-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-            </svg>
-        </button>
-        
-        <!-- Sous-menu (caché par défaut) -->
-        <ul id="submenu-apropos" class="ml-4 space-y-2 max-h-0 overflow-hidden transition-all duration-300">
-            <li>
-                <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
-                    Qui sommes nous ?
-                </a>
-            </li>
-            <li>
-                <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
-                    Zones d'intervention
-                </a>
-            </li>
-        </ul>
-        </li>
-    </ul>
+            <div class="p-8 border-b border-gray-100 flex items-center justify-between">
+                <img src="/assets/images/logo-apremiumg-long.png" alt="logo" width="140px">
+                
+                <button id="btnClose" class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 hover:border-[#244163] hover:bg-[#244163] transition-all group">
+                    <svg class="w-5 h-5 text-gray-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+     
+            <!-- Navigation -->
+            <nav class="px-6 py-4 overflow-y-auto" style="max-height: calc(100vh - 280px);">
+                <div class="space-y-3">
+                    
+                    <!-- Lien Accueil -->
+                    <a href="#" class="menu-link flex items-center gap-3 px-4 py-3 text-gray-700 transition-all duration-200">
+                        <span class="font-medium">Accueil</span>
+                    </a>
+                    
+                    <!-- Dropdown À propos -->
+                    <ul class="list-none p-0 m-0">
+                        <li class="menu-link">
+                            <button id="dropdown-apropos" class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition-all duration-200">
+                                <span class="font-medium">À propos</span>
+                                <svg class="dropdown-arrow w-4 h-4 text-gray-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            
+                            <ul id="submenu-apropos" class="ml-4 space-y-2 max-h-0 overflow-hidden transition-all duration-300 list-none p-0">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
+                                        Qui sommes nous ?
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
+                                        Zones d'intervention
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
 
-    <ul>
-        <li class="menu-link">
-        <!-- Lien parent cliquable -->
-        <button id="dropdown-services" class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition-all duration-200">
-            <span class="font-medium">Nos services</span>
-            <!-- Flèche qui tourne -->
-            <svg class="dropdown-arrow w-4 h-4 text-gray-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-            </svg>
-        </button>
-        
-        <!-- Sous-menu (caché par défaut) -->
-        <ul id="submenu-services" class="ml-4 space-y-2 max-h-0 overflow-hidden transition-all duration-300">
-            <li>
-                <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
-                    Tourisme
-                </a>
-            </li>
-            <li>
-                <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
-                    Tertiaire
-                </a>
-            </li>
-            <li>
-                <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
-                    Copro-Syndic
-                </a>
-            </li>
-            <li>
-                <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
-                    Industrie
-                </a>
-            </li>
-            <li>
-                <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
-                    Désinfection
-            </li>
-            <li>
-                <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
-    Travaux publics            </li>
-        </ul>
-        </li>
-    </ul>  
-   
-</nav>
+                    <!-- Dropdown Nos services -->
+                    <ul class="list-none p-0 m-0">
+                        <li class="menu-link">
+                            <button id="dropdown-services" class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition-all duration-200">
+                                <span class="font-medium">Nos services</span>
+                                <svg class="dropdown-arrow w-4 h-4 text-gray-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            
+                            <ul id="submenu-services" class="ml-4 space-y-2 max-h-0 overflow-hidden transition-all duration-300 list-none p-0">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
+                                        Tourisme
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
+                                        Tertiaire
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
+                                        Copro-Syndic
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
+                                        Industrie
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
+                                        Désinfection
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors">
+                                        Travaux publics
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </nav>
 
-<div class="absolute bottom-8 left-0 right-0 space-y-6">
-    
-    <div class="flex items-center gap-6">
-        
-        
-    </div>
-    
-    <div class="px-6">
-        <a href="tel:+33988327743" class="block w-full py-4 text-center bg-[#244163] text-white rounded-xl font-bold shadow-lg hover:bg-[#1a3550] transition-colors">
-            Contactez-nous
-        </a>
-    </div>
-    
-</div>
+            <!-- Bouton Contact en bas -->
+            <div class="absolute bottom-8 left-6 right-6">
+                <a href="tel:+33988327743" class="block w-full py-4 text-center bg-[#244163] text-white rounded-xl font-bold shadow-lg hover:bg-[#1a3550] transition-colors">
+                    Contactez-nous
+                </a>
+            </div>
 
-</div>
+        </div>
     </div>
     
     <!---- Hero Section ---->
-    <section
-      class="relative video-fade flex items-center overflow-hidden -mt-30"
-    >
+    <section class="relative video-fade flex items-center overflow-hidden -mt-30">
       <video
         autoplay
         muted
@@ -286,21 +251,13 @@
       <div class="absolute top-0 left-0 w-full h-full bg-white/75"></div>
 
       <div class="relative z-10 w-full max-w-7xl my-20 mx-auto px-4 py-20">
-        <div
-          class="flex flex-col w-fit md:items-start gap-2 pb-0 pt-10 md:py-20"
-        >
-          <h1
-            class="text-center text-5xl text-[#244163] md:text-6xl md:text-left font-bold"
-          >
+        <div class="flex flex-col w-fit md:items-start gap-2 pb-0 pt-10 md:py-20">
+          <h1 class="text-center text-5xl text-[#244163] md:text-6xl md:text-left font-bold">
             Ensemble, faisons<br />
-            <span class="text-6xl text-shine font-alex-brush md:text-7xl"
-              >briller</span
-            >
+            <span class="text-6xl text-shine font-alex-brush md:text-7xl">briller</span>
             vos espaces
           </h1>
-          <p
-            class="text-[#244163] py-2 text-center font-medium md:text-xl md:text-left max-w-2xl"
-          >
+          <p class="text-[#244163] py-2 text-center font-medium md:text-xl md:text-left max-w-2xl">
             Parce qu'un environnement propre et sain est la clé d'une
             <span class="font-bold">expérience réussie</span>, nous mettons
             notre expertise au service de votre tranquillité.
@@ -314,20 +271,21 @@
         </div>
       </div>
     </section>
+    
     <!--- Our Story Section ---->
     <section class="flex max-w-7xl mx-auto">
-      <div
-        class="flex flex-col md:flex-row justify-between items-center w-full gap-8 p-4"
-      >
+      <div class="flex flex-col md:flex-row justify-between items-center w-full gap-8 p-4">
         <div class="w-full md:w-1/2">
           <img
             src="/assets/images/img-story-aprem.png"
             alt="grenoble ville"
             class="w-full rounded-xl"
           />
-          <p class="text-xs text-slate-600 font-extralight italic pt-2">Fort de plus de vingt années d'expertise dans les domaines du tertiaire et du tourisme, 
+          <p class="text-xs text-slate-600 font-extralight italic pt-2">
+            Fort de plus de vingt années d'expertise dans les domaines du tertiaire et du tourisme, 
             notre directeur développement a choisi de valoriser l'ensemble de son parcours professionnel 
-            en proposant sa vision personnelle du secteur du nettoyage.</p>
+            en proposant sa vision personnelle du secteur du nettoyage.
+          </p>
         </div>
 
         <div class="flex flex-col gap-2.5 w-full md:w-1/2">
@@ -359,6 +317,7 @@
         </div>
       </div>
     </section>
+    
     <!-- Our Services Section -->
     <section class="flex flex-col px-4 py-8 md:py-16 gap-2.5 max-w-7xl mx-auto" id="ourStory">
       <div>
@@ -370,31 +329,21 @@
         <p>
           Sachez que chaque espace a ses
           <span class="font-bold text-[#1a7e6c]">besoins spécifiques</span>.
-          C’est pourquoi nous proposons des prestations de nettoyage
+          C'est pourquoi nous proposons des prestations de nettoyage
           <span class="font-bold text-[#1a7e6c]">entièrement adaptées</span> à
           votre environnement et à votre rythme. Avec nous, chaque intervention
           est pensée pour être efficace, fiable et parfaitement adaptée à vos
           attentes.
         </p>
       </div>
+      
       <!-- Service Cards -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-        <div
-          class="relative h-[200px] flex flex-col justify-center items-end p-12 rounded-tr-4xl rounded-br-4xl rounded-bl-4xl bg-white/10 backdrop-blur-lg backdrop-saturate-150 border border-white/20 overflow-hidden transition-all shadow-lg hover:shadow-2xl hover:border-white/40 hover:bg-white/15 group"
-        >
-          <div
-            class="absolute inset-0 from-white/10 via-transparent to-transparent pointer-events-none"
-          ></div>
-
-          <!-- Effet brillant au hover -->
-          <div
-            class="absolute inset-0 from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-          ></div>
-
-          <!-- Icône en fond à gauche avec rotation et zoom au hover -->
-          <div
-            class="absolute left-0 top-1/2 -translate-y-1/2 z-0 opacity-15 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500"
-          >
+        <!-- Card Tourisme -->
+        <div class="relative h-[200px] flex flex-col justify-center items-end p-12 rounded-tr-4xl rounded-br-4xl rounded-bl-4xl bg-white/10 backdrop-blur-lg backdrop-saturate-150 border border-white/20 overflow-hidden transition-all shadow-lg hover:shadow-2xl hover:border-white/40 hover:bg-white/15 group">
+          <div class="absolute inset-0 from-white/10 via-transparent to-transparent pointer-events-none"></div>
+          <div class="absolute inset-0 from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+          <div class="absolute left-0 top-1/2 -translate-y-1/2 z-0 opacity-15 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500">
             <img
               src="/assets/images/hotel (1).svg"
               alt="hotel icon"
@@ -402,504 +351,304 @@
               style="filter: drop-shadow(0 0 20px #1a7e6c)"
             />
           </div>
-
-          <!-- Title -->
-          <h3
-            class="relative z-10 font-bold text-[#1a7e6c] text-xl mb-4 text-right"
-          >
-            Tourisme
-          </h3>
-
-          <!-- Description -->
-          <p
-            class="relative z-10 text-right opacity-80 leading-relaxed text-gray-700"
-          >
+          <h3 class="relative z-10 font-bold text-[#1a7e6c] text-xl mb-4 text-right">Tourisme</h3>
+          <p class="relative z-10 text-right opacity-80 leading-relaxed text-gray-700">
             Résidences hôtelières, chalets, clubs de vacances, campings.
           </p>
         </div>
-        <div
-          class="relative h-[200px] flex flex-col justify-center items-end p-12 rounded-tr-4xl rounded-br-4xl rounded-bl-4xl bg-white/10 backdrop-blur-lg backdrop-saturate-150 border border-white/20 overflow-hidden transition-all shadow-lg hover:shadow-2xl hover:border-white/40 hover:bg-white/15 group"
-        >
-          <div
-            class="absolute inset-0 from-white/10 via-transparent to-transparent pointer-events-none"
-          ></div>
-
-          <!-- Effet brillant au hover -->
-          <div
-            class="absolute inset-0 from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-          ></div>
-
-          <!-- Icône en fond à gauche avec rotation et zoom au hover -->
-          <div
-            class="absolute left-0 top-1/2 -translate-y-1/2 z-0 opacity-15 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500"
-          >
+        
+        <!-- Card Tertiaire -->
+        <div class="relative h-[200px] flex flex-col justify-center items-end p-12 rounded-tr-4xl rounded-br-4xl rounded-bl-4xl bg-white/10 backdrop-blur-lg backdrop-saturate-150 border border-white/20 overflow-hidden transition-all shadow-lg hover:shadow-2xl hover:border-white/40 hover:bg-white/15 group">
+          <div class="absolute inset-0 from-white/10 via-transparent to-transparent pointer-events-none"></div>
+          <div class="absolute inset-0 from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+          <div class="absolute left-0 top-1/2 -translate-y-1/2 z-0 opacity-15 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500">
             <img
               src="/assets/images/chaise (1).svg"
-              alt="hotel icon"
+              alt="chaise icon"
               class="w-[150px] h-[150px] -rotate-12 group-hover:-rotate-6 transition-transform duration-500"
               style="filter: drop-shadow(0 0 20px #1a7e6c)"
             />
           </div>
-
-          <!-- Title -->
-          <h3
-            class="relative z-10 font-bold text-[#1a7e6c] text-xl mb-4 text-right"
-          >
-            Tertiaire
-          </h3>
-
-          <!-- Description -->
-          <p
-            class="relative z-10 text-right opacity-80 leading-relaxed text-gray-700"
-          >
+          <h3 class="relative z-10 font-bold text-[#1a7e6c] text-xl mb-4 text-right">Tertiaire</h3>
+          <p class="relative z-10 text-right opacity-80 leading-relaxed text-gray-700">
             Bureaux, banques, cabinets médicaux, agences...
           </p>
         </div>
-        <div
-          class="relative h-[200px] flex flex-col justify-center items-end p-12 rounded-tr-4xl rounded-br-4xl rounded-bl-4xl bg-white/10 backdrop-blur-lg backdrop-saturate-150 border border-white/20 overflow-hidden transition-all shadow-lg hover:shadow-2xl hover:border-white/40 hover:bg-white/15 group"
-        >
-          <div
-            class="absolute inset-0 from-white/10 via-transparent to-transparent pointer-events-none"
-          ></div>
-
-          <!-- Effet brillant au hover -->
-          <div
-            class="absolute inset-0 from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-          ></div>
-
-          <!-- Icône en fond à gauche avec rotation et zoom au hover -->
-          <div
-            class="absolute left-0 top-1/2 -translate-y-1/2 z-0 opacity-15 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500"
-          >
+        
+        <!-- Card Syndic-Copro -->
+        <div class="relative h-[200px] flex flex-col justify-center items-end p-12 rounded-tr-4xl rounded-br-4xl rounded-bl-4xl bg-white/10 backdrop-blur-lg backdrop-saturate-150 border border-white/20 overflow-hidden transition-all shadow-lg hover:shadow-2xl hover:border-white/40 hover:bg-white/15 group">
+          <div class="absolute inset-0 from-white/10 via-transparent to-transparent pointer-events-none"></div>
+          <div class="absolute inset-0 from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+          <div class="absolute left-0 top-1/2 -translate-y-1/2 z-0 opacity-15 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500">
             <img
               src="/assets/images/bureau.svg"
-              alt="hotel icon"
+              alt="bureau icon"
               class="w-[150px] h-[150px] -rotate-12 group-hover:-rotate-6 transition-transform duration-500"
               style="filter: drop-shadow(0 0 20px #1a7e6c)"
             />
           </div>
-
-          <!-- Title -->
-          <h3
-            class="relative z-10 font-bold text-[#1a7e6c] text-xl mb-4 text-right"
-          >
-            Syndic-Copro
-          </h3>
-
-          <!-- Description -->
-          <p
-            class="relative z-10 text-right opacity-80 leading-relaxed text-gray-700"
-          >
+          <h3 class="relative z-10 font-bold text-[#1a7e6c] text-xl mb-4 text-right">Syndic-Copro</h3>
+          <p class="relative z-10 text-right opacity-80 leading-relaxed text-gray-700">
             Copropriétés, mairies, écoles, gymnases, salles de sport.
           </p>
         </div>
-        <div
-          class="relative h-[200px] flex flex-col justify-center items-end p-12 rounded-tr-4xl rounded-br-4xl rounded-bl-4xl bg-white/10 backdrop-blur-lg backdrop-saturate-150 border border-white/20 overflow-hidden transition-all shadow-lg hover:shadow-2xl hover:border-white/40 hover:bg-white/15 group"
-        >
-          <div
-            class="absolute inset-0 from-white/10 via-transparent to-transparent pointer-events-none"
-          ></div>
-
-          <!-- Effet brillant au hover -->
-          <div
-            class="absolute inset-0 from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-          ></div>
-
-          <!-- Icône en fond à gauche avec rotation et zoom au hover -->
-          <div
-            class="absolute left-0 top-1/2 -translate-y-1/2 z-0 opacity-15 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500"
-          >
+        
+        <!-- Card Industrie -->
+        <div class="relative h-[200px] flex flex-col justify-center items-end p-12 rounded-tr-4xl rounded-br-4xl rounded-bl-4xl bg-white/10 backdrop-blur-lg backdrop-saturate-150 border border-white/20 overflow-hidden transition-all shadow-lg hover:shadow-2xl hover:border-white/40 hover:bg-white/15 group">
+          <div class="absolute inset-0 from-white/10 via-transparent to-transparent pointer-events-none"></div>
+          <div class="absolute inset-0 from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+          <div class="absolute left-0 top-1/2 -translate-y-1/2 z-0 opacity-15 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500">
             <img
               src="/assets/images/chimique.svg"
-              alt="hotel icon"
+              alt="chimique icon"
               class="w-[150px] h-[150px] -rotate-12 group-hover:-rotate-6 transition-transform duration-500"
               style="filter: drop-shadow(0 0 20px #1a7e6c)"
             />
           </div>
-
-          <!-- Title -->
-          <h3
-            class="relative z-10 font-bold text-[#1a7e6c] text-xl mb-4 text-right"
-          >
-            Industrie
-          </h3>
-
-          <!-- Description -->
-          <p
-            class="relative z-10 text-right opacity-80 leading-relaxed text-gray-700"
-          >
+          <h3 class="relative z-10 font-bold text-[#1a7e6c] text-xl mb-4 text-right">Industrie</h3>
+          <p class="relative z-10 text-right opacity-80 leading-relaxed text-gray-700">
             Usines, entrepôts, salles blanche, commerces ...
           </p>
         </div>
-        <div
-          class="relative h-[200px] flex flex-col justify-center items-end p-12 rounded-tr-4xl rounded-br-4xl rounded-bl-4xl bg-white/10 backdrop-blur-lg backdrop-saturate-150 border border-white/20 overflow-hidden transition-all shadow-lg hover:shadow-2xl hover:border-white/40 hover:bg-white/15 group"
-        >
-          <div
-            class="absolute inset-0 from-white/10 via-transparent to-transparent pointer-events-none"
-          ></div>
-
-          <!-- Effet brillant au hover -->
-          <div
-            class="absolute inset-0 from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-          ></div>
-
-          <!-- Icône en fond à gauche avec rotation et zoom au hover -->
-          <div
-            class="absolute left-0 top-1/2 -translate-y-1/2 z-0 opacity-15 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500"
-          >
+        
+        <!-- Card Travaux Publics -->
+        <div class="relative h-[200px] flex flex-col justify-center items-end p-12 rounded-tr-4xl rounded-br-4xl rounded-bl-4xl bg-white/10 backdrop-blur-lg backdrop-saturate-150 border border-white/20 overflow-hidden transition-all shadow-lg hover:shadow-2xl hover:border-white/40 hover:bg-white/15 group">
+          <div class="absolute inset-0 from-white/10 via-transparent to-transparent pointer-events-none"></div>
+          <div class="absolute inset-0 from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+          <div class="absolute left-0 top-1/2 -translate-y-1/2 z-0 opacity-15 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500">
             <img
               src="/assets/images/casque-de-chantier.svg"
-              alt="hotel icon"
+              alt="casque icon"
               class="w-[150px] h-[150px] -rotate-12 group-hover:-rotate-6 transition-transform duration-500"
               style="filter: drop-shadow(0 0 20px #1a7e6c)"
             />
           </div>
-
-          <!-- Title -->
-          <h3
-            class="relative z-10 font-bold text-[#1a7e6c] text-xl mb-4 text-right"
-          >
-            Travaux Publics
-          </h3>
-
-          <!-- Description -->
-          <p
-            class="relative z-10 text-right opacity-80 leading-relaxed text-gray-700"
-          >
+          <h3 class="relative z-10 font-bold text-[#1a7e6c] text-xl mb-4 text-right">Travaux Publics</h3>
+          <p class="relative z-10 text-right opacity-80 leading-relaxed text-gray-700">
             Fins de chantier, rénovations, vitrerie
           </p>
         </div>
-        <div
-          class="relative h-[200px] flex flex-col justify-center items-end p-12 rounded-tr-4xl rounded-br-4xl rounded-bl-4xl bg-white/10 backdrop-blur-lg backdrop-saturate-150 border border-white/20 overflow-hidden transition-all shadow-lg hover:shadow-2xl hover:border-white/40 hover:bg-white/15 group"
-        >
-          <div
-            class="absolute inset-0 from-white/10 via-transparent to-transparent pointer-events-none"
-          ></div>
-
-          <!-- Effet brillant au hover -->
-          <div
-            class="absolute inset-0 from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-          ></div>
-
-          <!-- Icône en fond à gauche avec rotation et zoom au hover -->
-          <div
-            class="absolute left-0 top-1/2 -translate-y-1/2 z-0 opacity-15 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500"
-          >
+        
+        <!-- Card Désinfection -->
+        <div class="relative h-[200px] flex flex-col justify-center items-end p-12 rounded-tr-4xl rounded-br-4xl rounded-bl-4xl bg-white/10 backdrop-blur-lg backdrop-saturate-150 border border-white/20 overflow-hidden transition-all shadow-lg hover:shadow-2xl hover:border-white/40 hover:bg-white/15 group">
+          <div class="absolute inset-0 from-white/10 via-transparent to-transparent pointer-events-none"></div>
+          <div class="absolute inset-0 from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+          <div class="absolute left-0 top-1/2 -translate-y-1/2 z-0 opacity-15 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500">
             <img
               src="/assets/images/anti-virus.svg"
-              alt="hotel icon"
+              alt="anti-virus icon"
               class="w-[150px] h-[150px] -rotate-12 group-hover:-rotate-6 transition-transform duration-500"
               style="filter: drop-shadow(0 0 20px #1a7e6c)"
             />
           </div>
-
-          <!-- Title -->
-          <h3
-            class="relative z-10 font-bold text-[#1a7e6c] text-xl mb-4 text-right"
-          >
-            Désinfection
-          </h3>
-
-          <!-- Description -->
-          <p
-            class="relative z-10 text-right opacity-80 leading-relaxed text-gray-700"
-          >
+          <h3 class="relative z-10 font-bold text-[#1a7e6c] text-xl mb-4 text-right">Désinfection</h3>
+          <p class="relative z-10 text-right opacity-80 leading-relaxed text-gray-700">
             Copropriétés, mairies, écoles, gymnases, salles de sport.
           </p>
         </div>
       </div>
     </section>
+    
     <!-- Section Partenaires -->
     <section>
-      <!-- Titre -->
       <div class="text-center mb-2.5">
-        <h2 class="text-3xl font-bold text-[#244163]">
-          Nos Partenaires
-        </h2>
+        <h2 class="text-3xl font-bold text-[#244163]">Nos Partenaires</h2>
         <p class="text-lg text-gray-600">Ils nous font confiance</p>
       </div>     
 
-        <div class="overflow-hidden scroll-container">
-          <div
-            class="flex gap-16 items-center animate-scroll px-6"
-            id="scrollContent"
-          >
-            <!-- Logo 1 -->
-            <div
-              class="min-w-[130px] w-[130px] h-[130px] 
-              flex items-center justify-center"
-            >
-              <img src="/assets/images/belambra-logo.svg" alt="" />
-            </div>
-            <!-- Logo 2 -->
-            <div
-              class="min-w-[130px] w-[130px] h-[130px] 
-              flex items-center justify-center"
-            >
-              <img src="/assets/images/goelia.svg" alt="" />
-            </div>
-            <!-- Logo 3 -->
-            <div
-              class="min-w-[130px] w-[130px] h-[130px] 
-              flex items-center justify-center"
-            >
-              <img src="/assets/images/location-alpe-d-huez-logo-gris.svg" alt="" />
-            </div>
-             <!-- Logo 4 -->
-            <div
-              class="min-w-[130px] w-[130px] h-[130px] 
-              flex items-center justify-center"
-            >
-              <img src="/assets/images/Logo-groupe_Vertical-Couleur.png" alt="" />
-            </div>
-             <!-- Logo 4 -->
-            <div
-              class="min-w-[130px] w-[130px] h-[130px] 
-              flex items-center justify-center"
-            >
-              <img src="/assets/images/eiffage.png" alt="" />
-            </div>
+      <div class="overflow-hidden scroll-container">
+        <div class="flex gap-16 items-center animate-scroll px-6" id="scrollContent">
+          <div class="min-w-[130px] w-[130px] h-[130px] flex items-center justify-center">
+            <img src="/assets/images/belambra-logo.svg" alt="Belambra" />
+          </div>
+          <div class="min-w-[130px] w-[130px] h-[130px] flex items-center justify-center">
+            <img src="/assets/images/goelia.svg" alt="Goelia" />
+          </div>
+          <div class="min-w-[130px] w-[130px] h-[130px] flex items-center justify-center">
+            <img src="/assets/images/location-alpe-d-huez-logo-gris.svg" alt="Alpe d'Huez" />
+          </div>
+          <div class="min-w-[130px] w-[130px] h-[130px] flex items-center justify-center">
+            <img src="/assets/images/Logo-groupe_Vertical-Couleur.png" alt="Logo Groupe" />
+          </div>
+          <div class="min-w-[130px] w-[130px] h-[130px] flex items-center justify-center">
+            <img src="/assets/images/eiffage.png" alt="Eiffage" />
           </div>
         </div>
       </div>
     </section>
-      <!-- Section Formulaire de Contact - Split Screen avec Map -->
-<!-- Section Formulaire de Contact - Split Screen avec Map -->
-<section class="relative min-h-screen flex items-center justify-center py-10 px-4">
     
-    <!-- Fondus haut et bas pour transitions douces -->
-    <div class="absolute inset-0 z-5 pointer-events-none">
-        <div class="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-white via-white/60 to-transparent"></div>
-        <div class="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-white via-white/60 to-transparent"></div>
-    </div>
-    
-    <!-- Container principal -->
-    <div class="w-full max-w-7xl relative z-10 mx-auto">
-        <div class="grid lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-2xl min-h-[800px]">
-            
-            <!-- Partie gauche - Formulaire -->
-            <div class="bg-white px-16 py-8 lg:p-12 lg:pl-16 lg:pr-12 flex flex-col justify-center opacity-0 -translate-x-8 animate-slide-left">
-                <!-- Header -->
-                <div class="mb-8">
-                    <h2 class="text-5xl font-bold text-[#244163] mb-4">Contactez-nous</h2>
-                    <p class="text-gray-600 text-lg mb-6">
-                      Besoin d'une intervention, candidater ou toute autre question, 
-                      notre équipe vous répond rapidement avec une solution adaptée.                     </p>
-                    
-                    <!-- Liens de contact rapide -->
-                    <div class="space-y-3 mb-8">
-                        <a href="tel:+33988327743" class="flex items-center gap-3 text-[#1a7e6c] hover:text-[#244163] transition-colors group">
-                            <div class="w-10 h-10 bg-[#1a7e6c]/10 rounded-full flex items-center justify-center group-hover:bg-[#1a7e6c]/20 transition-colors">
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-                                </svg>
-                            </div>
-                            <span class="font-medium">Appelez-nous</span>
-                        </a>
-                        
-                    </div>
-                </div>
-                
-                <!-- Formulaire -->
-                <form class="space-y-6" id="contactForm">
-                    <!-- Prénom et Nom -->
-                    <div class="grid grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Prénom</label>
-                            <input 
-                                type="text" 
-                                name="prenom"
-                                placeholder="Prénom"
-                                required
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 bg-gray-50 transition-all duration-300 focus:border-[#1a7e6c] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1a7e6c]/20"
-                            >
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Nom</label>
-                            <input 
-                                type="text" 
-                                name="nom"
-                                placeholder="Nom"
-                                required
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 bg-gray-50 transition-all duration-300 focus:border-[#1a7e6c] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1a7e6c]/20"
-                            >
-                        </div>
-                    </div>
-                    
-                    <!-- Email -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                        <input 
-                            type="email" 
-                            name="email"
-                            placeholder="vous@exemple.com"
-                            required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 bg-gray-50 transition-all duration-300 focus:border-[#1a7e6c] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1a7e6c]/20"
-                        >
-                    </div>
-                    
-                    <!-- Téléphone -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Téléphone</label>
-                        <input 
-                            type="tel" 
-                            name="tel"
-                            placeholder="+33 (0)6 00 00 00 00"
-                            required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 bg-gray-50 transition-all duration-300 focus:border-[#1a7e6c] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1a7e6c]/20"
-                        >
-                    </div>
-                    
-                    <!-- Services (Select) -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Service</label>
-                        <select 
-                            name="service"
-                            required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 bg-gray-50 transition-all duration-300 focus:border-[#1a7e6c] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1a7e6c]/20"
-                        >
-                            <option value="">Sélectionnez un service</option>
-                            <option value="tourisme">Tourisme</option>
-                            <option value="syndic">Gestion locative / Syndic</option>
-                            <option value="tertiaire">Tertiaire</option>
-                            <option value="industriel">Industriel</option>
-                            <option value="desinfection">Désinfection</option>
-                            <option value="tp">Travaux publics</option>
-                            <option value="candidature">Candidature</option>
-                        </select>
-                    </div>
-                    
-                    <!-- Message -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                        <textarea 
-                            name="message"
-                            placeholder="Décrivez votre besoin..."
-                            rows="4"
-                            required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 bg-gray-50 transition-all duration-300 focus:border-[#1a7e6c] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1a7e6c]/20 resize-none"
-                        ></textarea>
-                    </div>
-                    
-                    <!-- Bouton Submit -->
-                    <button 
-                        type="submit"
-                        class="w-full bg-linear-to-r from-[#1a7e6c] to-[#244163] text-white py-4 rounded-lg font-semibold text-lg shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#1a7e6c]/50"
-                    >
-                        Envoyer le message
-                    </button>
-                </form>
-            </div>
-            
-            <!-- Partie droite - Map -->
-            <div class="relative bg-gray-200 opacity-0 translate-x-8 animate-slide-right">
-                <!-- Map Google Maps -->
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2810.87507754195!2d5.78273807634918!3d45.20986335037247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af5cf86cfc695%3A0xa15109e6ef952261!2sAPG%20(ANYX%20PREMIUM%20GROUP)!5e0!3m2!1sfr!2sfr!4v1765159654412!5m2!1sfr!2sfr"
-                    width="100%" 
-                    height="100%" 
-                    style="border:0; position: absolute; top: 0; left: 0; filter: grayscale(20%);" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-                                
-            </div>
-            
+    <!-- Section Formulaire de Contact -->
+    <section class="relative min-h-screen flex items-center justify-center py-10 px-4">
+        
+        <!-- Fondus haut et bas -->
+        <div class="absolute inset-0 z-5 pointer-events-none">
+            <div class="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-white via-white/60 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-white via-white/60 to-transparent"></div>
         </div>
-    </div>
-</section>
-
-<footer class="relative w-full overflow-hidden" 
-      style="min-height: 400px; background-image: url('assets/images/bgfooter.png'); 
-      background-size: cover; background-position: center; background-repeat: no-repeat;">
-    
-  
-    <div class="relative bg-white/0 pt-16 z-10" style="padding-bottom: 5rem;">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between gap-12">
+        
+        <!-- Container principal -->
+        <div class="w-full max-w-7xl relative z-10 mx-auto">
+            <div class="grid lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-2xl min-h-[800px]">
                 
-                <div class="flex flex-col gap-3 max-w-md">
-                    <!-- Logo -->
-                    <div>
-                        <img src="assets/images/logo-apremiumg-long.png" alt="logo" width="140px">
-                        <p class="text-gray-800 text-sm font-extralight italic">
-                            « Plus qu'un service de nettoyage : une équipe engagée qui redonne éclat, fraîcheur et sérénité à chacun de vos espaces. »
+                <!-- Partie gauche - Formulaire -->
+                <div class="bg-white px-16 py-8 lg:p-12 lg:pl-16 lg:pr-12 flex flex-col justify-center opacity-0 -translate-x-8 animate-slide-left">
+                    <div class="mb-8">
+                        <h2 class="text-5xl font-bold text-[#244163] mb-4">Contactez-nous</h2>
+                        <p class="text-gray-600 text-lg mb-6">
+                          Besoin d'une intervention, candidater ou toute autre question, 
+                          notre équipe vous répond rapidement avec une solution adaptée.
                         </p>
-                    </div>
-                    
-                    <!-- Réseaux sociaux -->
-                    <div class="flex gap-4">
-                        <!-- Instagram -->
-                        <a href="#" class="h-10 flex items-center justify-center transition-all hover:scale-110">
-                           <img src="assets/images/instagram.svg" alt="logo instagram" width="30px">
-                        </a>
                         
-                        <!-- LinkedIn -->
-                        <a href="#" class="h-10 flex items-center justify-center transition-all hover:scale-110">
-                            <img src="assets/images/linkedin.svg" alt="logo linkedin" width="30px">
-                        </a>
-
-                        <!-- Whats app -->
-                         <a href="#" class="h-10 flex items-center justify-center transition-all hover:scale-110">
-                            <img src="assets/images/whatsapp.svg" alt="logo whatsapp" width="30px">
-                        </a>
+                        <div class="space-y-3 mb-8">
+                            <a href="tel:+33988327743" class="flex items-center gap-3 text-[#1a7e6c] hover:text-[#244163] transition-colors group">
+                                <div class="w-10 h-10 bg-[#1a7e6c]/10 rounded-full flex items-center justify-center group-hover:bg-[#1a7e6c]/20 transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                    </svg>
+                                </div>
+                                <span class="font-medium">Appelez-nous</span>
+                            </a>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Colonnes Droite : Liens pratiques -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                     
-                    <!-- Colonne Nos Services -->
-                    <div>
-                        <h3 class="font-bold text-lg mb-4" style="color: #244163;">Nos Services</h3>
-                        <ul class="space-y-3">
-                            <li><a href="#" class="text-gray-600 hover:text-[#1a7e6c] transition-colors text-sm">Tourisme</a></li>
-                            <li><a href="#" class="text-gray-600 hover:text-[#1a7e6c] transition-colors text-sm">Tertiaire</a></li>
-                            <li><a href="#" class="text-gray-600 hover:text-[#1a7e6c] transition-colors text-sm">Désinfection</a></li>
-                            <li><a href="#" class="text-gray-600 hover:text-[#1a7e6c] transition-colors text-sm">Industrie</a></li>
-                            <li><a href="#" class="text-gray-600 hover:text-[#1a7e6c] transition-colors text-sm">Collectivités - Syndic</a></li>
-                            <li><a href="#" class="text-gray-600 hover:text-[#1a7e6c] transition-colors text-sm">Travaux publiques</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Colonne À Propos -->
-                    <div>
-                        <h3 class="font-bold text-lg mb-4" style="color: #244163;">À Propos</h3>
-                        <ul class="space-y-3">
-                            <li><a href="#" class="text-gray-600 hover:text-[#1a7e6c] transition-colors text-sm">Qui sommes nous ?</a></li>
-                            <li><a href="#" class="text-gray-600 hover:text-[#1a7e6c] transition-colors text-sm">Nos régions d'intervention</a></li>
-                        </ul>
-                    </div>
-
+                    <!-- Formulaire -->
+                    <form class="space-y-6" id="contactForm">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Prénom</label>
+                                <input type="text" name="prenom" placeholder="Prénom" required class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 bg-gray-50 transition-all duration-300 focus:border-[#1a7e6c] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1a7e6c]/20">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Nom</label>
+                                <input type="text" name="nom" placeholder="Nom" required class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 bg-gray-50 transition-all duration-300 focus:border-[#1a7e6c] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1a7e6c]/20">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" name="email" placeholder="vous@exemple.com" required class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 bg-gray-50 transition-all duration-300 focus:border-[#1a7e6c] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1a7e6c]/20">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Téléphone</label>
+                            <input type="tel" name="tel" placeholder="+33 (0)6 00 00 00 00" required class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 bg-gray-50 transition-all duration-300 focus:border-[#1a7e6c] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1a7e6c]/20">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Service</label>
+                            <select name="service" required class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 bg-gray-50 transition-all duration-300 focus:border-[#1a7e6c] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1a7e6c]/20">
+                                <option value="">Sélectionnez un service</option>
+                                <option value="tourisme">Tourisme</option>
+                                <option value="syndic">Gestion locative / Syndic</option>
+                                <option value="tertiaire">Tertiaire</option>
+                                <option value="industriel">Industriel</option>
+                                <option value="desinfection">Désinfection</option>
+                                <option value="tp">Travaux publics</option>
+                                <option value="candidature">Candidature</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea name="message" placeholder="Décrivez votre besoin..." rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-800 bg-gray-50 transition-all duration-300 focus:border-[#1a7e6c] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1a7e6c]/20 resize-none"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-linear-to-r from-[#1a7e6c] to-[#244163] text-white py-4 rounded-lg font-semibold text-lg shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#1a7e6c]/50">
+                            Envoyer le message
+                        </button>
+                    </form>
                 </div>
+                
+                <!-- Partie droite - Map -->
+                <div class="relative bg-gray-200 opacity-0 translate-x-8 animate-slide-right">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2810.87507754195!2d5.78273807634918!3d45.20986335037247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af5cf86cfc695%3A0xa15109e6ef952261!2sAPG%20(ANYX%20PREMIUM%20GROUP)!5e0!3m2!1sfr!2sfr!4v1765159654412!5m2!1sfr!2sfr"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; position: absolute; top: 0; left: 0; filter: grayscale(20%);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+                
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="relative w-full flex items-end pt-0" style="min-height: 350px;">
-        <div class="relative w-full p-4 md:p-8 z-10">
-            <div class="max-w-7xl mx-auto">
-                <div class="flex flex-col w-full items-center md:items-start">
-                    <p class="text-white text-md mb-4 text-center md:text-left">Services de propreté à Grenoble et en région Auvergne-Rhône-Alpes.</p>
+    <!-- Footer -->
+    <footer class="relative w-full overflow-hidden" style="min-height: 400px; background-image: url('assets/images/bgfooter.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        
+        <div class="relative bg-white/0 pt-16 z-10" style="padding-bottom: 5rem;">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between gap-12">
                     
-                    <div class="flex flex-col md:flex-row justify-between w-full items-center gap-4">
-                        <p class="text-white text-xs">© 2025 - A + PREMIUM GROUP • Tous droits réservés.</p>
+                    <div class="flex flex-col gap-3 max-w-md">
+                        <div>
+                            <img src="assets/images/logo-apremiumg-long.png" alt="logo" width="140px">
+                            <p class="text-gray-800 text-sm font-extralight italic">
+                                « Plus qu'un service de nettoyage : une équipe engagée qui redonne éclat, fraîcheur et sérénité à chacun de vos espaces. »
+                            </p>
+                        </div>
                         
-                        <div class="flex gap-2.5">
-                            <a href="#" class="text-white text-xs hover:underline">Contactez-nous</a>
-                            <a href="#" class="text-white text-xs hover:underline">Mentions Légales</a>
+                        <div class="flex gap-4">
+                            <a href="#" class="h-10 flex items-center justify-center transition-all hover:scale-110">
+                               <img src="assets/images/instagram.svg" alt="logo instagram" width="30px">
+                            </a>
+                            <a href="#" class="h-10 flex items-center justify-center transition-all hover:scale-110">
+                                <img src="assets/images/linkedin.svg" alt="logo linkedin" width="30px">
+                            </a>
+                            <a href="#" class="h-10 flex items-center justify-center transition-all hover:scale-110">
+                                <img src="assets/images/whatsapp.svg" alt="logo whatsapp" width="30px">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div>
+                            <h3 class="font-bold text-lg mb-4" style="color: #244163;">Nos Services</h3>
+                            <ul class="space-y-3">
+                                <li><a href="#" class="text-gray-600 hover:text-[#1a7e6c] transition-colors text-sm">Tourisme</a></li>
+                                <li><a href="#" class="text-gray-600 hover:text-[#1a7e6c] transition-colors text-sm">Tertiaire</a></li>
+                                <li><a href="#" class="text-gray-600 hover:text-[#1a7e6c] transition-colors text-sm">Désinfection</a></li>
+                                <li><a href="#" class="text-gray-600 hover:text-[#1a7e6c] transition-colors text-sm">Industrie</a></li>
+                                <li><a href="#" class="text-gray-600 hover:text-[#1a7e6c] transition-colors text-sm">Collectivités - Syndic</a></li>
+                                <li><a href="#" class="text-gray-600 hover:text-[#1a7e6c] transition-colors text-sm">Travaux publiques</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-lg mb-4" style="color: #244163;">À Propos</h3>
+                            <ul class="space-y-3">
+                                <li><a href="#" class="text-gray-600 hover:text-[#1a7e6c] transition-colors text-sm">Qui sommes nous ?</a></li>
+                                <li><a href="#" class="text-gray-600 hover:text-[#1a7e6c] transition-colors text-sm">Nos régions d'intervention</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
 
-</body>
-</html>
-    
+        <div class="relative w-full flex items-end pt-0" style="min-height: 350px;">
+            <div class="relative w-full p-4 md:p-8 z-10">
+                <div class="max-w-7xl mx-auto">
+                    <div class="flex flex-col w-full items-center md:items-start">
+                        <p class="text-white text-md mb-4 text-center md:text-left">Services de propreté à Grenoble et en région Auvergne-Rhône-Alpes.</p>
+                        
+                        <div class="flex flex-col md:flex-row justify-between w-full items-center gap-4">
+                            <p class="text-white text-xs">© 2025 - A + PREMIUM GROUP • Tous droits réservés.</p>
+                            
+                            <div class="flex gap-2.5">
+                                <a href="#" class="text-white text-xs hover:underline">Contactez-nous</a>
+                                <a href="#" class="text-white text-xs hover:underline">Mentions Légales</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="/assets/js/script.js"></script>
     <script src="/assets/js/formulaire-script.js"></script>
   </body>
