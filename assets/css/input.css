@@ -225,3 +225,11 @@ video {
         opacity: 1;
     }
 }
+
+@layer base {
+    body.menu-is-open {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+    }
+  }
