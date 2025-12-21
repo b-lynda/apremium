@@ -54,6 +54,7 @@ if (bouton && menu && overlay && panel) {
             // FERMER
             console.log("❌ Fermeture du menu");
             
+            // NETTOYER puis ajouter
             panel.classList.remove('menu-open');
             panel.classList.add('menu-closed');
             overlay.classList.remove('overlay-visible');
@@ -73,13 +74,12 @@ if (bouton && menu && overlay && panel) {
             // OUVRIR
             console.log("🍔 Ouverture du menu");
             
+            // NETTOYER puis ajouter
             panel.classList.remove('menu-closed');
             panel.classList.add('menu-open');
             overlay.classList.remove('overlay-hidden');
             overlay.classList.add('overlay-visible');
             menu.classList.remove('pointer-events-none');
-            panel.style.pointerEvents = "auto";
-            overlay.style.pointerEvents = "auto";
 
             // Hamburger → X
             lignes[0].style.width = "100%";
@@ -100,6 +100,7 @@ if (btnClose) {
     btnClose.addEventListener("click", function () {
         console.log("⊗ Fermeture avec btnClose");
         
+        // NETTOYER puis ajouter
         panel.classList.remove('menu-open');
         panel.classList.add('menu-closed');
         overlay.classList.remove('overlay-visible');
@@ -122,6 +123,7 @@ if (overlay) {
     overlay.addEventListener("click", function () {
         console.log("🖱️ Clic sur l'overlay");
         
+        // NETTOYER puis ajouter
         panel.classList.remove('menu-open');
         panel.classList.add('menu-closed');
         overlay.classList.remove('overlay-visible');
