@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/assets/css/output.css" rel="stylesheet" />
+
+    <title>A PREMIUM GROUP | Accueil</title>
+  </head>
+  <body>
+      <nav class="sticky top-0 z-40 transition-all duration-300">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <a href="/index.html">
+          <img
+            src="/assets/images/logo-apremiumg-long.png"
+            alt="logo"
+            class="w-40 md:w-[200px]"
+          />
+        </a>
+
+        <!-- Menu Desktop -->
+        <div class="hidden md:flex justify-between items-center w-fill">
+          <ul class="flex gap-8 mr-8 items-center">
+            <!-- Dropdown À propos -->
+            <li class="relative dropdown-hover">
+              <div
+                class="inline-flex items-center gap-2 cursor-pointer hover:font-bold"
+              >
+                <span>A propos</span>
+                <svg
+                  class="w-4 h-4 transition-transform dropdown-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+              <div
+                class="dropdown-menu absolute left-0 mt-4 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible transition-all duration-200 z-50"
+              >
+                <div class="py-2">
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                    >Qui sommes nous ?</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                    >Zones d'intervention</a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <!-- Dropdown Nos Services -->
+            <li class="relative dropdown-hover">
+              <div
+                class="inline-flex items-center gap-2 cursor-pointer hover:font-bold"
+              >
+                <span>Nos Services</span>
+                <svg
+                  class="w-4 h-4 transition-transform dropdown-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+              <div
+                class="dropdown-menu absolute left-0 mt-4 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible transition-all duration-200 z-50"
+              >
+                <div class="py-2">
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                    >Tourisme</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                    >Copro-Syndic</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                    >Tertiaire</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                    >Industrie</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                    >Désinfection</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                    >Travaux publics</a
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Bouton Contact Desktop -->
+          <a
+            href="tel:+33988327743"
+            class="btn-ripple flex items-center justify-center bg-[#244163] text-white rounded-lg w-fit py-3 px-6 text-base font-bold cursor-pointer relative overflow-hidden"
+          >
+            <span class="relative z-10">Contactez-nous</span>
+          </a>
+        </div>
+
+        <!-- Bouton Hamburger Mobile -->
+        <button
+          id="menu-btn"
+          class="w-10 h-[30px] flex flex-col justify-between cursor-pointer bg-transparent border-none p-0 md:hidden hover:opacity-80 transition-opacity"
+        >
+          <span
+            class="hamburger-line block h-1 bg-[#244163] rounded-full w-[80%] ml-auto transition-all duration-300"
+          ></span>
+          <span
+            class="hamburger-line block h-1 bg-[#244163] rounded-full w-full transition-all duration-300"
+          ></span>
+          <span
+            class="hamburger-line block h-1 bg-[#244163] rounded-full w-[60%] transition-all duration-300"
+          ></span>
+        </button>
+      </div>
+    </nav>
+     <div
+      id="menu-minimal"
+      class="fixed inset-0 z-9999 pointer-events-none md:hidden"
+    >
+      <div
+        id="overlay"
+        class="absolute inset-0 bg-black/50 overlay-hidden transition-opacity duration-300 z-[9998]"
+      ></div>
+      <div
+        id="panel"
+        class="absolute top-0 left-0 h-full bg-white shadow-2xl menu-closed transition-transform duration-300 z-[9999]"
+      >
+        <div
+          class="p-8 border-b border-gray-100 flex items-center justify-between"
+        >
+          <img
+            src="/assets/images/logo-apremiumg-long.png"
+            alt="logo"
+            width="140px"
+          />
+
+          <button
+            id="btnClose"
+            class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 hover:border-[#244163] hover:bg-[#244163] transition-all group"
+          >
+            <svg
+              class="w-5 h-5 text-gray-600 group-hover:text-white transition-colors"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigation -->
+        <nav
+          class="px-6 py-4 overflow-y-auto"
+          style="max-height: calc(100vh - 280px)"
+        >
+          <div class="space-y-3">
+            <a
+              href="index.html"
+              class="menu-link flex items-center gap-3 px-4 text-gray-700 transition-all duration-200"
+            >
+              <span class="font-medium">Accueil</span>
+            </a>
+
+            <!-- Dropdown À propos -->
+            <ul class="list-none p-0 m-0">
+              <li class="menu-link">
+                <button
+                  id="dropdown-apropos"
+                  class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition-all duration-200"
+                >
+                  <span class="font-medium">À propos</span>
+                  <svg
+                    class="dropdown-arrow w-4 h-4 text-gray-500 transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </button>
+
+                <ul
+                  id="submenu-apropos"
+                  class="ml-4 space-y-2 max-h-0 overflow-hidden transition-all duration-300 list-none p-0"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors"
+                    >
+                      Qui sommes nous ?
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors"
+                    >
+                      Zones d'intervention
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Dropdown Nos services -->
+            <ul class="list-none p-0 m-0">
+              <li class="menu-link">
+                <button
+                  id="dropdown-services"
+                  class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition-all duration-200"
+                >
+                  <span class="font-medium">Nos services</span>
+                  <svg
+                    class="dropdown-arrow w-4 h-4 text-gray-500 transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </button>
+
+                <ul
+                  id="submenu-services"
+                  class="ml-4 space-y-2 max-h-0 overflow-hidden transition-all duration-300 list-none p-0"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors"
+                    >
+                      Tourisme
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors"
+                    >
+                      Tertiaire
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors"
+                    >
+                      Copro-Syndic
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors"
+                    >
+                      Industrie
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors"
+                    >
+                      Désinfection
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors"
+                    >
+                      Travaux publics
+                    </a>
+                  </li>
+                </ul>
+
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="menu-link flex items-center gap-3 px-4 py-3 text-gray-700 transition-all duration-200"
+            >
+              <span class="font-medium">Mentions légales</span>
+            </a>
+          </div>
+        </nav>
+
+        <!-- Bouton Contact en bas -->
+        <div class="absolute bottom-8 left-6 right-6 mt-4">
+                      <p class="text-xs text-slate-400 text-center pb-4">Suivez-nous sur nos réseaux</p>
+
+          <div class="flex justify-center gap-4 mb-4">
+            <a href="https://www.instagram.com/apg_proprete/"
+              ><img src="/assets/images/instagram.png" alt="" width="26px"
+            /></a>
+            <a href="https://www.linkedin.com/company/a-premium-group/ "
+              ><img src="/assets/images/linkedin.png" alt="" width="26px"
+            /></a>
+            <a href="https://wa.me/+33665969012"
+              ><img src="/assets/images/whatsapp.png" alt="" width="26px"
+            /></a>
+          </div>
+          <a
+            href="tel:+33988327743"
+            class="block w-full py-4 text-center bg-linear-to-r from-[#1a7e6c] to-[#244163] text-white rounded-xl font-bold shadow-lg hover:bg-[#1a3550] transition-colors"
+          >
+            Contactez-nous
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/formulaire-script.js"></script>
+  </body>
+</html>
