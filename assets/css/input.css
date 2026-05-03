@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@source "../pages/**/*.php";
+@source "../components/**/*.php";
+@source "../*.php";
 
 .font-alex-brush {
   font-family: "Alex Brush", cursive;
@@ -233,3 +236,43 @@ video {
         width: 100%;
     }
   }
+
+@layer utilities {
+  .dots-green {
+    background-image: radial-gradient(circle, rgba(26,126,108,0.14) 1.5px, transparent 1.5px);
+    background-size: 22px 22px;
+  }
+
+  .dots-blue {
+    background-image: radial-gradient(circle, rgba(36,65,99,0.08) 1.5px, transparent 1.5px);
+    background-size: 18px 18px;
+  }
+
+    .card-top-bar::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(to right, #1a7e6c, #244163);
+    border-radius: 18px 18px 0 0;
+  }
+  .title-highlight {
+    position: relative;
+    display: inline-block;
+    color: #1a7e6c;
+  }
+  .title-highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #1a7e6c;
+    border-radius: 2px;
+    animation: underlineGrow 0.8s ease 0.85s forwards;
+  }
+  @keyframes underlineGrow {
+    to { width: 100%; }
+  }
+}

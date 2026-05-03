@@ -1,30 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"
-      rel="stylesheet"
-    />
-    <link href="/assets/css/output.css" rel="stylesheet" />
-
-    <title>A PREMIUM GROUP | Mentions Légales</title>
-  </head>
-<body>
-     <nav class="sticky top-0 z-40 transition-all duration-300">
+    <!--- Navbar ---->
+    <nav class="sticky top-0 z-40 bg-white transition-all duration-300">
       <div
         class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
       >
         <!-- Logo -->
         <div>
+            <a href="../index.php">
           <img
             src="/assets/images/logo-apremiumg-long.png"
             alt="logo"
             class="w-40 md:w-[200px]"
           />
+          </a>
         </div>
 
         <!-- Menu Desktop -->
@@ -100,9 +87,9 @@
                     >Tourisme</a
                   >
                   <a
-                    href="#"
+                    href="../pages/syndic-collectivites.php"
                     class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                    >Copro-Syndic</a
+                    >Syndic-Collectivités</a
                   >
                   <a
                     href="#"
@@ -156,7 +143,7 @@
       </div>
     </nav>
 
-     <!-- Menu Mobile -->
+    <!-- Menu Mobile -->
     <div
       id="menu-minimal"
       class="fixed inset-0 z-9999 pointer-events-none md:hidden"
@@ -205,7 +192,7 @@
         >
           <div class="space-y-3">
             <a
-              href="index.html"
+              href="../index.php"
               class="menu-link flex items-center gap-3 px-4 text-gray-700 transition-all duration-200"
             >
               <span class="font-medium">Accueil</span>
@@ -303,10 +290,10 @@
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="../pages/syndic-collectivites.php"
                       class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors"
                     >
-                      Copro-Syndic
+                      Syndic-Collectivités
                     </a>
                   </li>
                   <li>
@@ -371,6 +358,8 @@
       </div>
     </div>
 
-   
-</body>
-</html>
+    <?php if(isset($jsonLd)): ?>
+<script type="application/ld+json">
+  <?php echo $jsonLd; ?>
+</script>
+<?php endif; ?>
