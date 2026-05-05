@@ -7,12 +7,12 @@ $jsonLd = '{
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://'. $_SERVER['HTTP_HOST'] .'"},
     {"@type": "ListItem", "position": 2, "name": "Nos services", "item": "https://'. $_SERVER['HTTP_HOST'] .'/pages/nos-services.php"},
-    {"@type": "ListItem", "position": 3, "name": "Syndic & Collectivités", "item": "https://'. $_SERVER['HTTP_HOST'] .'/pages/syndic-collectivites.php"}
+    {"@type": "ListItem", "position": 3, "name": "Collectivités", "item": "https://'. $_SERVER['HTTP_HOST'] .'/pages/collectivites.php"}
   ]
 }';
 ?>
     <head>
-        <title>APG | Syndic & Collectivités</title>
+        <title>APG | Copro & Collectivités</title>
         <?php include __DIR__ . '/../components/head.php'; ?>
     </head>
     
@@ -53,7 +53,7 @@ $jsonLd = '{
                 <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
                 <polyline points="9 22 9 12 15 12 15 22"/>
               </svg>
-              Syndic & Collectivités
+              Copropriété & Collectivités
             </span>
           </div>
  
@@ -388,7 +388,7 @@ $jsonLd = '{
           <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
           <polyline points="9 22 9 12 15 12 15 22"/>
         </svg>
-        Syndic de copropriété
+        Copropriété
       </span>
       <h2 class="text-3xl font-bold text-[#244163] mb-3">Entretien des parties communes</h2>
       <div class="w-12 h-[3px] bg-[#1a7e6c] rounded-full mx-auto mb-4"></div>
@@ -528,7 +528,7 @@ $jsonLd = '{
           <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
           <polyline points="9 22 9 12 15 12 15 22"/>
         </svg>
-        Syndic & Collectivités
+        Copropriété | Collectivités
       </span>
 
       <!-- Titre -->
@@ -539,7 +539,7 @@ $jsonLd = '{
 
       <!-- Sous-titre -->
       <p class="text-[#6b7a8d] text-base mb-8 max-w-xl leading-relaxed">
-        Syndics de copropriété, collectivités, mairies : nous intervenons sur l'ensemble de vos parties communes avec rigueur, réactivité et traçabilité.
+        Copropriété, collectivités, mairies : nous intervenons sur l'ensemble de vos parties communes avec rigueur, réactivité et traçabilité.
       </p>
 
       <!-- 3 arguments -->

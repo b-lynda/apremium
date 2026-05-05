@@ -87,9 +87,9 @@
                     >Tourisme</a
                   >
                   <a
-                    href="../pages/syndic-collectivites.php"
+                    href="../pages/collectivites.php"
                     class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                    >Syndic-Collectivités</a
+                    >Collectivités</a
                   >
                   <a
                     href="#"
@@ -290,10 +290,10 @@
                   </li>
                   <li>
                     <a
-                      href="../pages/syndic-collectivites.php"
+                      href="../pages/collectivites.php"
                       class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors"
                     >
-                      Syndic-Collectivités
+                      Collectivités
                     </a>
                   </li>
                   <li>
