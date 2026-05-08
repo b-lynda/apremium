@@ -51,7 +51,7 @@ $jsonLd = '{
                   scale-x-0 origin-left transition-transform duration-200
                   group-hover:scale-x-100"></div>
       <!-- Icône -->
-      <div class="w-12 h-12 rounded-[12px] bg-[#e8f5f2] border border-[#c2e8df] flex items-center justify-center mb-4
+      <div class="w-12 h-12 rounded-xl bg-[#e8f5f2] border border-[#c2e8df] flex items-center justify-center mb-4
                   transition-all duration-200
                   group-hover:bg-[#1a7e6c] group-hover:border-[#1a7e6c]">
         <svg class="w-5 h-5 stroke-[#1a7e6c] fill-none transition-all duration-200 group-hover:stroke-white"

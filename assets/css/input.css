@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant is-active (&.is-active);
 @source "../pages/**/*.php";
 @source "../components/**/*.php";
 @source "../*.php";

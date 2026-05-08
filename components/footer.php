@@ -68,7 +68,7 @@
                 <ul class="space-y-3">
                   <li>
                     <a
-                      href="#"
+                      href="../pages/tourisme.php"
                       class="text-gray-600 hover:text-[#1a7e6c] transition-colors text-sm"
                       >Tourisme</a
                     >
@@ -96,9 +96,9 @@
                   </li>
                   <li>
                     <a
-                      href="../pages/syndic-collectivites.php"
+                      href="../pages/collectivites.php"
                       class="text-gray-600 hover:text-[#1a7e6c] transition-colors text-sm"
-                      >Collectivités - Syndic</a
+                      >Collectivités</a
                     >
                   </li>
                   <li>
