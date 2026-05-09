@@ -124,20 +124,16 @@ $jsonLd = '{
  
             <!-- Grille 4 stats -->
             <div class="grid grid-cols-2 gap-3">
-              <div class="bg-[#f4f7f5] rounded-xl p-4 text-center border border-[#e2eae7] hover:border-[#c2e8df] hover:bg-[#e8f5f2] transition-all duration-200 cursor-default group">
-                <p class="text-[1.7rem] font-extrabold text-[#1a7e6c] leading-none mb-1.5 group-hover:scale-105 transition-transform">+ 4000</p>
-                <p class="text-[0.7rem] text-[#6b7a8d]">logements nettoyés</p>
+                <div class="bg-[#f4f7f5] rounded-xl p-4 flex flex-col items-center text-center justify-center border border-[#e2eae7] hover:border-[#c2e8df] hover:bg-[#e8f5f2] transition-all duration-200 cursor-default group">                <p class="text-[1.7rem] font-extrabold text-[#1a7e6c] leading-none mb-1.5 group-hover:scale-105 transition-transform">+ 4000</p>
+                    <p class="text-[0.7rem] text-[#6b7a8d]">logements nettoyés</p>
               </div>
-              <div class="bg-[#f4f7f5] rounded-xl  p-4 text-center border border-[#e2eae7] hover:border-[#c2e8df] hover:bg-[#e8f5f2] transition-all duration-200 cursor-default group">
-                <p class="text-[1.7rem] font-extrabold text-[#1a7e6c] leading-none mb-1.5 group-hover:scale-105 transition-transform">10 ans</p>
+<div class="bg-[#f4f7f5] rounded-xl p-4 flex flex-col items-center justify-center border border-[#e2eae7] hover:border-[#c2e8df] hover:bg-[#e8f5f2] transition-all duration-200 cursor-default group">                <p class="text-[1.7rem] font-extrabold text-[#1a7e6c] leading-none mb-1.5 group-hover:scale-105 transition-transform">10 ans</p>
                 <p class="text-[0.7rem] text-[#6b7a8d]">d'expertise</p>
               </div>
-              <div class="bg-[#f4f7f5] rounded-xl p-4 text-center border border-[#e2eae7] hover:border-[#c2e8df] hover:bg-[#e8f5f2] transition-all duration-200 cursor-default group">
-                <p class="text-[1.7rem] font-extrabold text-[#1a7e6c] leading-none mb-1.5 group-hover:scale-105 transition-transform">7j/7</p>
+<div class="bg-[#f4f7f5] rounded-xl p-4 flex flex-col items-center justify-center border border-[#e2eae7] hover:border-[#c2e8df] hover:bg-[#e8f5f2] transition-all duration-200 cursor-default group">                <p class="text-[1.7rem] font-extrabold text-[#1a7e6c] leading-none mb-1.5 group-hover:scale-105 transition-transform">7j/7</p>
                 <p class="text-[0.7rem] text-[#6b7a8d]">disponibilité</p>
               </div>
-              <div class="bg-[#f4f7f5] rounded-xl p-4 text-center border border-[#e2eae7] hover:border-[#c2e8df] hover:bg-[#e8f5f2] transition-all duration-200 cursor-default group">
-                <p class="text-[1.7rem] font-extrabold text-[#1a7e6c] leading-none mb-1.5 group-hover:scale-105 transition-transform">2 Zones</p>
+<div class="bg-[#f4f7f5] rounded-xl p-4 flex flex-col items-center text-center justify-center border border-[#e2eae7] hover:border-[#c2e8df] hover:bg-[#e8f5f2] transition-all duration-200 cursor-default group">                <p class="text-[1.7rem] font-extrabold text-[#1a7e6c] leading-none mb-1.5 group-hover:scale-105 transition-transform">2 Zones</p>
                 <p class="text-[0.7rem] text-[#6b7a8d]">Rhône-Alpes & Sud</p>
               </div>
             </div>
@@ -284,7 +280,7 @@ $jsonLd = '{
         <div class="mb-5">
           <p class="text-[0.68rem] font-semibold text-white/60 uppercase tracking-widest mb-2">Partenaires de confiance</p>
           <p class="text-xl font-extrabold text-white leading-snug mb-3">+4 000 logements nettoyés chaque année</p>
-          <p class="text-xs text-white/70 leading-relaxed font-light">Belambra, Pierre & Vacances, Prestige Gestion nous font confiance pour l'entretien de leurs résidences.<br> Sur le terrain, nous agissons comme une seule équipe, engagée et à l'écoute</p>
+          <p class="text-xs text-white/70 leading-relaxed font-light">Belambra, Pierre & Vacances, Prestige Gestion nous font confiance pour l'entretien de leurs résidences.<br class="hidden lg:block"> Sur le terrain, nous agissons comme une seule équipe, engagée et à l'écoute</p>
         </div>
         <a href="#references" class="inline-flex items-center gap-2 bg-white/15 border border-white/30 text-white text-xs font-semibold px-4 py-2.5 rounded-lg w-fit transition-all duration-200 hover:bg-white/25">
           Voir nos références
@@ -329,7 +325,7 @@ $jsonLd = '{
           <div class="col-prestation group is-active cursor-pointer shrink-0" data-id="0">
             <div class="relative w-[110px] h-[130px] flex flex-col items-center justify-center gap-2 px-2.5 rounded-2xl overflow-hidden text-center transition-all duration-300 bg-white border border-[#e2eae7] group-hover:border-[#c2e8df] group-is-active:bg-linear-to-br group-is-active:from-[#1a7e6c] group-is-active:to-[#244163] group-is-active:border-transparent group-is-active:shadow-[0_8px_24px_rgba(26,126,108,0.25)]">
               <span class="prestation-num absolute top-1 -left-2 text-[52px] font-extrabold leading-none tracking-[-3px] pointer-events-none select-none text-[#1a7e6c] opacity-[0.10] transition-all duration-300 group-is-active:text-white group-is-active:opacity-[0.18]">01</span>
-              <p class="prestation-title relative z-10 text-[10.5px] font-bold leading-snug px-1 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Ménage fin de séjour</p>
+              <p class="prestation-title relative z-10 text-[12px] font-bold leading-snug px-1 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Ménage fin de séjour</p>
               <div class="prestation-arrow relative z-10 w-5 h-5 rounded-full flex items-center justify-center bg-[#e8f5f2] border border-[#c2e8df] transition-all duration-300 group-is-active:bg-white/20 group-is-active:border-white/30">
                 <svg class="w-2 h-2 fill-none stroke-[#1a7e6c] transition-transform duration-300 group-is-active:stroke-white group-is-active:rotate-90" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
               </div>
@@ -339,7 +335,7 @@ $jsonLd = '{
           <div class="col-prestation group cursor-pointer shrink-0" data-id="1">
             <div class="relative w-[110px] h-[130px] flex flex-col items-center justify-center gap-2 px-2.5 rounded-2xl overflow-hidden text-center transition-all duration-300 bg-white border border-[#e2eae7] group-hover:border-[#c2e8df] group-is-active:bg-linear-to-br group-is-active:from-[#1a7e6c] group-is-active:to-[#244163] group-is-active:border-transparent group-is-active:shadow-[0_8px_24px_rgba(26,126,108,0.25)]">
               <span class="prestation-num absolute top-1 -left-2 text-[52px] font-extrabold leading-none tracking-[-3px] pointer-events-none select-none text-[#1a7e6c] opacity-[0.10] transition-all duration-300 group-is-active:text-white group-is-active:opacity-[0.18]">02</span>
-              <p class="prestation-title relative z-10 text-[10.5px] font-bold leading-snug px-1 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Dégraissage</p>
+              <p class="prestation-title relative z-10 text-[12px] font-bold leading-snug px-1 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Dégraissage</p>
               <div class="prestation-arrow relative z-10 w-5 h-5 rounded-full flex items-center justify-center bg-[#e8f5f2] border border-[#c2e8df] transition-all duration-300 group-is-active:bg-white/20 group-is-active:border-white/30">
                 <svg class="w-2 h-2 fill-none stroke-[#1a7e6c] transition-transform duration-300 group-is-active:stroke-white group-is-active:rotate-90" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
               </div>
@@ -349,7 +345,7 @@ $jsonLd = '{
           <div class="col-prestation group cursor-pointer shrink-0" data-id="2">
             <div class="relative w-[110px] h-[130px] flex flex-col items-center justify-center gap-2 px-2.5 rounded-2xl overflow-hidden text-center transition-all duration-300 bg-white border border-[#e2eae7] group-hover:border-[#c2e8df] group-is-active:bg-linear-to-br group-is-active:from-[#1a7e6c] group-is-active:to-[#244163] group-is-active:border-transparent group-is-active:shadow-[0_8px_24px_rgba(26,126,108,0.25)]">
               <span class="prestation-num absolute top-1 -left-2 text-[52px] font-extrabold leading-none tracking-[-3px] pointer-events-none select-none text-[#1a7e6c] opacity-[0.10] transition-all duration-300 group-is-active:text-white group-is-active:opacity-[0.18]">03</span>
-              <p class="prestation-title relative z-10 text-[10.5px] font-bold leading-snug px-1 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Recouche</p>
+              <p class="prestation-title relative z-10 text-[12px] font-bold leading-snug px-1 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Recouche</p>
               <div class="prestation-arrow relative z-10 w-5 h-5 rounded-full flex items-center justify-center bg-[#e8f5f2] border border-[#c2e8df] transition-all duration-300 group-is-active:bg-white/20 group-is-active:border-white/30">
                 <svg class="w-2 h-2 fill-none stroke-[#1a7e6c] transition-transform duration-300 group-is-active:stroke-white group-is-active:rotate-90" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
               </div>
@@ -359,7 +355,7 @@ $jsonLd = '{
           <div class="col-prestation group cursor-pointer shrink-0" data-id="3">
             <div class="relative w-[110px] h-[130px] flex flex-col items-center justify-center gap-2 px-2.5 rounded-2xl overflow-hidden text-center transition-all duration-300 bg-white border border-[#e2eae7] group-hover:border-[#c2e8df] group-is-active:bg-linear-to-br group-is-active:from-[#1a7e6c] group-is-active:to-[#244163] group-is-active:border-transparent group-is-active:shadow-[0_8px_24px_rgba(26,126,108,0.25)]">
               <span class="prestation-num absolute top-1 -left-2 text-[52px] font-extrabold leading-none tracking-[-3px] pointer-events-none select-none text-[#1a7e6c] opacity-[0.10] transition-all duration-300 group-is-active:text-white group-is-active:opacity-[0.18]">04</span>
-              <p class="prestation-title relative z-10 text-[10.5px] font-bold leading-snug px-1 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Fin de chantier</p>
+              <p class="prestation-title relative z-10 text-[12px] font-bold leading-snug px-1 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Fin de chantier</p>
               <div class="prestation-arrow relative z-10 w-5 h-5 rounded-full flex items-center justify-center bg-[#e8f5f2] border border-[#c2e8df] transition-all duration-300 group-is-active:bg-white/20 group-is-active:border-white/30">
                 <svg class="w-2 h-2 fill-none stroke-[#1a7e6c] transition-transform duration-300 group-is-active:stroke-white group-is-active:rotate-90" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
               </div>
@@ -369,7 +365,7 @@ $jsonLd = '{
           <div class="col-prestation group cursor-pointer shrink-0" data-id="4">
             <div class="relative w-[110px] h-[130px] flex flex-col items-center justify-center gap-2 px-2.5 rounded-2xl overflow-hidden text-center transition-all duration-300 bg-white border border-[#e2eae7] group-hover:border-[#c2e8df] group-is-active:bg-linear-to-br group-is-active:from-[#1a7e6c] group-is-active:to-[#244163] group-is-active:border-transparent group-is-active:shadow-[0_8px_24px_rgba(26,126,108,0.25)]">
               <span class="prestation-num absolute top-1 -left-2 text-[52px] font-extrabold leading-none tracking-[-3px] pointer-events-none select-none text-[#1a7e6c] opacity-[0.10] transition-all duration-300 group-is-active:text-white group-is-active:opacity-[0.18]">05</span>
-              <p class="prestation-title relative z-10 text-[10.5px] font-bold leading-snug px-1 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Confection des lits</p>
+              <p class="prestation-title relative z-10 text-[12px] font-bold leading-snug px-1 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Confection des lits</p>
               <div class="prestation-arrow relative z-10 w-5 h-5 rounded-full flex items-center justify-center bg-[#e8f5f2] border border-[#c2e8df] transition-all duration-300 group-is-active:bg-white/20 group-is-active:border-white/30">
                 <svg class="w-2 h-2 fill-none stroke-[#1a7e6c] transition-transform duration-300 group-is-active:stroke-white group-is-active:rotate-90" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
               </div>
@@ -379,7 +375,7 @@ $jsonLd = '{
           <div class="col-prestation group cursor-pointer shrink-0" data-id="5">
             <div class="relative w-[110px] h-[130px] flex flex-col items-center justify-center gap-2 px-2.5 rounded-2xl overflow-hidden text-center transition-all duration-300 bg-white border border-[#e2eae7] group-hover:border-[#c2e8df] group-is-active:bg-linear-to-br group-is-active:from-[#1a7e6c] group-is-active:to-[#244163] group-is-active:border-transparent group-is-active:shadow-[0_8px_24px_rgba(26,126,108,0.25)]">
               <span class="prestation-num absolute top-1 -left-2 text-[52px] font-extrabold leading-none tracking-[-3px] pointer-events-none select-none text-[#1a7e6c] opacity-[0.10] transition-all duration-300 group-is-active:text-white group-is-active:opacity-[0.18]">06</span>
-              <p class="prestation-title relative z-10 text-[10.5px] font-bold leading-snug px-1 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Parties communes</p>
+              <p class="prestation-title relative z-10 text-[12px] font-bold leading-snug px-1 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Parties communes</p>
               <div class="prestation-arrow relative z-10 w-5 h-5 rounded-full flex items-center justify-center bg-[#e8f5f2] border border-[#c2e8df] transition-all duration-300 group-is-active:bg-white/20 group-is-active:border-white/30">
                 <svg class="w-2 h-2 fill-none stroke-[#1a7e6c] transition-transform duration-300 group-is-active:stroke-white group-is-active:rotate-90" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
               </div>
@@ -389,7 +385,7 @@ $jsonLd = '{
           <div class="col-prestation group cursor-pointer shrink-0" data-id="6">
             <div class="relative w-[110px] h-[130px] flex flex-col items-center justify-center gap-2 px-2.5 rounded-2xl overflow-hidden text-center transition-all duration-300 bg-white border border-[#e2eae7] group-hover:border-[#c2e8df] group-is-active:bg-linear-to-br group-is-active:from-[#1a7e6c] group-is-active:to-[#244163] group-is-active:border-transparent group-is-active:shadow-[0_8px_24px_rgba(26,126,108,0.25)]">
               <span class="prestation-num absolute top-1 -left-2 text-[52px] font-extrabold leading-none tracking-[-3px] pointer-events-none select-none text-[#1a7e6c] opacity-[0.10] transition-all duration-300 group-is-active:text-white group-is-active:opacity-[0.18]">07</span>
-              <p class="prestation-title relative z-10 text-[10.5px] font-bold leading-snug px-1 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Restaurants</p>
+              <p class="prestation-title relative z-10 text-[12px] font-bold leading-snug px-1 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Restaurants</p>
               <div class="prestation-arrow relative z-10 w-5 h-5 rounded-full flex items-center justify-center bg-[#e8f5f2] border border-[#c2e8df] transition-all duration-300 group-is-active:bg-white/20 group-is-active:border-white/30">
                 <svg class="w-2 h-2 fill-none stroke-[#1a7e6c] transition-transform duration-300 group-is-active:stroke-white group-is-active:rotate-90" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
               </div>
@@ -411,7 +407,7 @@ $jsonLd = '{
       <div class="col-prestation group is-active cursor-pointer rounded-2xl overflow-hidden transition-transform duration-200 hover:-translate-y-1" data-id="0">
         <div class="relative h-[200px] flex flex-col items-center justify-center gap-2.5 px-2.5 rounded-2xl overflow-hidden text-center transition-all duration-300 bg-white border border-[#e2eae7] group-hover:border-[#c2e8df] group-is-active:bg-linear-to-br group-is-active:from-[#1a7e6c] group-is-active:to-[#244163] group-is-active:border-transparent group-is-active:shadow-[0_12px_40px_rgba(26,126,108,0.25)]">
           <span class="prestation-num absolute top-2 -left-3 text-[88px] font-extrabold leading-none tracking-[-4px] pointer-events-none select-none text-[#1a7e6c] opacity-[0.10] transition-all duration-300 group-is-active:text-white group-is-active:opacity-[0.18]">01</span>
-          <p class="prestation-title relative z-10 text-[11.5px] font-bold leading-snug px-1.5 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Ménage fin de séjour</p>
+          <p class="prestation-title relative z-10 text-[14px] font-bold leading-snug px-1.5 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Ménage fin de séjour</p>
           <div class="prestation-arrow relative z-10 w-[22px] h-[22px] rounded-full flex items-center justify-center bg-[#e8f5f2] border border-[#c2e8df] transition-all duration-300 group-is-active:bg-white/20 group-is-active:border-white/30">
             <svg class="w-2.5 h-2.5 fill-none stroke-[#1a7e6c] transition-transform duration-300 group-is-active:stroke-white group-is-active:rotate-90" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
           </div>
@@ -421,7 +417,7 @@ $jsonLd = '{
       <div class="col-prestation group cursor-pointer rounded-2xl overflow-hidden transition-transform duration-200 hover:-translate-y-1" data-id="1">
         <div class="relative h-[200px] flex flex-col items-center justify-center gap-2.5 px-2.5 rounded-2xl overflow-hidden text-center transition-all duration-300 bg-white border border-[#e2eae7] group-hover:border-[#c2e8df] group-is-active:bg-linear-to-br group-is-active:from-[#1a7e6c] group-is-active:to-[#244163] group-is-active:border-transparent group-is-active:shadow-[0_12px_40px_rgba(26,126,108,0.25)]">
           <span class="prestation-num absolute top-2 -left-3 text-[88px] font-extrabold leading-none tracking-[-4px] pointer-events-none select-none text-[#1a7e6c] opacity-[0.10] transition-all duration-300 group-is-active:text-white group-is-active:opacity-[0.18]">02</span>
-          <p class="prestation-title relative z-10 text-[11.5px] font-bold leading-snug px-1.5 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Dégraissage</p>
+          <p class="prestation-title relative z-10 text-[14px] font-bold leading-snug px-1.5 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Dégraissage</p>
           <div class="prestation-arrow relative z-10 w-[22px] h-[22px] rounded-full flex items-center justify-center bg-[#e8f5f2] border border-[#c2e8df] transition-all duration-300 group-is-active:bg-white/20 group-is-active:border-white/30">
             <svg class="w-2.5 h-2.5 fill-none stroke-[#1a7e6c] transition-transform duration-300 group-is-active:stroke-white group-is-active:rotate-90" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
           </div>
@@ -431,7 +427,7 @@ $jsonLd = '{
       <div class="col-prestation group cursor-pointer rounded-2xl overflow-hidden transition-transform duration-200 hover:-translate-y-1" data-id="2">
         <div class="relative h-[200px] flex flex-col items-center justify-center gap-2.5 px-2.5 rounded-2xl overflow-hidden text-center transition-all duration-300 bg-white border border-[#e2eae7] group-hover:border-[#c2e8df] group-is-active:bg-linear-to-br group-is-active:from-[#1a7e6c] group-is-active:to-[#244163] group-is-active:border-transparent group-is-active:shadow-[0_12px_40px_rgba(26,126,108,0.25)]">
           <span class="prestation-num absolute top-2 -left-3 text-[88px] font-extrabold leading-none tracking-[-4px] pointer-events-none select-none text-[#1a7e6c] opacity-[0.10] transition-all duration-300 group-is-active:text-white group-is-active:opacity-[0.18]">03</span>
-          <p class="prestation-title relative z-10 text-[11.5px] font-bold leading-snug px-1.5 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Recouche</p>
+          <p class="prestation-title relative z-10 text-[14px] font-bold leading-snug px-1.5 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Recouche</p>
           <div class="prestation-arrow relative z-10 w-[22px] h-[22px] rounded-full flex items-center justify-center bg-[#e8f5f2] border border-[#c2e8df] transition-all duration-300 group-is-active:bg-white/20 group-is-active:border-white/30">
             <svg class="w-2.5 h-2.5 fill-none stroke-[#1a7e6c] transition-transform duration-300 group-is-active:stroke-white group-is-active:rotate-90" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
           </div>
@@ -441,7 +437,7 @@ $jsonLd = '{
       <div class="col-prestation group cursor-pointer rounded-2xl overflow-hidden transition-transform duration-200 hover:-translate-y-1" data-id="3">
         <div class="relative h-[200px] flex flex-col items-center justify-center gap-2.5 px-2.5 rounded-2xl overflow-hidden text-center transition-all duration-300 bg-white border border-[#e2eae7] group-hover:border-[#c2e8df] group-is-active:bg-linear-to-br group-is-active:from-[#1a7e6c] group-is-active:to-[#244163] group-is-active:border-transparent group-is-active:shadow-[0_12px_40px_rgba(26,126,108,0.25)]">
           <span class="prestation-num absolute top-2 -left-3 text-[88px] font-extrabold leading-none tracking-[-4px] pointer-events-none select-none text-[#1a7e6c] opacity-[0.10] transition-all duration-300 group-is-active:text-white group-is-active:opacity-[0.18]">04</span>
-          <p class="prestation-title relative z-10 text-[11.5px] font-bold leading-snug px-1.5 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Fin de chantier</p>
+          <p class="prestation-title relative z-10 text-[14px] font-bold leading-snug px-1.5 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Fin de chantier</p>
           <div class="prestation-arrow relative z-10 w-[22px] h-[22px] rounded-full flex items-center justify-center bg-[#e8f5f2] border border-[#c2e8df] transition-all duration-300 group-is-active:bg-white/20 group-is-active:border-white/30">
             <svg class="w-2.5 h-2.5 fill-none stroke-[#1a7e6c] transition-transform duration-300 group-is-active:stroke-white group-is-active:rotate-90" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
           </div>
@@ -451,7 +447,7 @@ $jsonLd = '{
       <div class="col-prestation group cursor-pointer rounded-2xl overflow-hidden transition-transform duration-200 hover:-translate-y-1" data-id="4">
         <div class="relative h-[200px] flex flex-col items-center justify-center gap-2.5 px-2.5 rounded-2xl overflow-hidden text-center transition-all duration-300 bg-white border border-[#e2eae7] group-hover:border-[#c2e8df] group-is-active:bg-linear-to-br group-is-active:from-[#1a7e6c] group-is-active:to-[#244163] group-is-active:border-transparent group-is-active:shadow-[0_12px_40px_rgba(26,126,108,0.25)]">
           <span class="prestation-num absolute top-2 -left-3 text-[88px] font-extrabold leading-none tracking-[-4px] pointer-events-none select-none text-[#1a7e6c] opacity-[0.10] transition-all duration-300 group-is-active:text-white group-is-active:opacity-[0.18]">05</span>
-          <p class="prestation-title relative z-10 text-[11.5px] font-bold leading-snug px-1.5 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Confection des lits</p>
+          <p class="prestation-title relative z-10 text-[14px] font-bold leading-snug px-1.5 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Confection des lits</p>
           <div class="prestation-arrow relative z-10 w-[22px] h-[22px] rounded-full flex items-center justify-center bg-[#e8f5f2] border border-[#c2e8df] transition-all duration-300 group-is-active:bg-white/20 group-is-active:border-white/30">
             <svg class="w-2.5 h-2.5 fill-none stroke-[#1a7e6c] transition-transform duration-300 group-is-active:stroke-white group-is-active:rotate-90" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
           </div>
@@ -461,7 +457,7 @@ $jsonLd = '{
       <div class="col-prestation group cursor-pointer rounded-2xl overflow-hidden transition-transform duration-200 hover:-translate-y-1" data-id="5">
         <div class="relative h-[200px] flex flex-col items-center justify-center gap-2.5 px-2.5 rounded-2xl overflow-hidden text-center transition-all duration-300 bg-white border border-[#e2eae7] group-hover:border-[#c2e8df] group-is-active:bg-linear-to-br group-is-active:from-[#1a7e6c] group-is-active:to-[#244163] group-is-active:border-transparent group-is-active:shadow-[0_12px_40px_rgba(26,126,108,0.25)]">
           <span class="prestation-num absolute top-2 -left-3 text-[88px] font-extrabold leading-none tracking-[-4px] pointer-events-none select-none text-[#1a7e6c] opacity-[0.10] transition-all duration-300 group-is-active:text-white group-is-active:opacity-[0.18]">06</span>
-          <p class="prestation-title relative z-10 text-[11.5px] font-bold leading-snug px-1.5 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Parties communes</p>
+          <p class="prestation-title relative z-10 text-[14px] font-bold leading-snug px-1.5 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Parties communes</p>
           <div class="prestation-arrow relative z-10 w-[22px] h-[22px] rounded-full flex items-center justify-center bg-[#e8f5f2] border border-[#c2e8df] transition-all duration-300 group-is-active:bg-white/20 group-is-active:border-white/30">
             <svg class="w-2.5 h-2.5 fill-none stroke-[#1a7e6c] transition-transform duration-300 group-is-active:stroke-white group-is-active:rotate-90" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
           </div>
@@ -471,7 +467,7 @@ $jsonLd = '{
       <div class="col-prestation group cursor-pointer rounded-2xl overflow-hidden transition-transform duration-200 hover:-translate-y-1" data-id="6">
         <div class="relative h-[200px] flex flex-col items-center justify-center gap-2.5 px-2.5 rounded-2xl overflow-hidden text-center transition-all duration-300 bg-white border border-[#e2eae7] group-hover:border-[#c2e8df] group-is-active:bg-linear-to-br group-is-active:from-[#1a7e6c] group-is-active:to-[#244163] group-is-active:border-transparent group-is-active:shadow-[0_12px_40px_rgba(26,126,108,0.25)]">
           <span class="prestation-num absolute top-2 -left-3 text-[88px] font-extrabold leading-none tracking-[-4px] pointer-events-none select-none text-[#1a7e6c] opacity-[0.10] transition-all duration-300 group-is-active:text-white group-is-active:opacity-[0.18]">07</span>
-          <p class="prestation-title relative z-10 text-[11.5px] font-bold leading-snug px-1.5 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Restaurants</p>
+          <p class="prestation-title relative z-10 text-[14px] font-bold leading-snug px-1.5 text-[#1a2332] transition-all duration-300 group-is-active:text-white">Restaurants</p>
           <div class="prestation-arrow relative z-10 w-[22px] h-[22px] rounded-full flex items-center justify-center bg-[#e8f5f2] border border-[#c2e8df] transition-all duration-300 group-is-active:bg-white/20 group-is-active:border-white/30">
             <svg class="w-2.5 h-2.5 fill-none stroke-[#1a7e6c] transition-transform duration-300 group-is-active:stroke-white group-is-active:rotate-90" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
           </div>
@@ -489,7 +485,105 @@ $jsonLd = '{
   </div>
 </section>
 
-<!-- ── JAVASCRIPT ── -->
+<!-- ── SECTION PARTENAIRES ── -->
+<section class="relative bg-[#f7f8fa] py-16 px-6 lg:px-10 overflow-hidden" id="references">
+
+  <!-- Décorations -->
+  <div class="dots-green absolute top-0 right-0 w-64 h-64 pointer-events-none z-0"></div>
+  <div class="absolute -bottom-16 -left-16 w-60 h-60 rounded-full border border-[#1a7e6c]/8 pointer-events-none z-0"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+    <!-- GAUCHE -->
+    <div>
+      <span class="inline-flex items-center gap-2 bg-[#e8f5f2] border border-[#c2e8df] text-[#1a7e6c] text-[0.72rem] font-semibold px-3.5 py-1.5 rounded-md uppercase tracking-wider mb-4">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#1a7e6c]"></span>
+        Partenaires
+      </span>
+      <h2 class="text-[clamp(1.8rem,3vw,2.2rem)] font-extrabold text-[#1a2332] leading-tight mb-4">
+        Des références qui<br>
+        <span class="text-[#1a7e6c]">parlent d'elles-mêmes</span>
+      </h2>
+      <p class="text-sm text-[#6b7a8d] leading-relaxed font-light max-w-sm">
+        Notre directeur développement travaille avec les leaders du tourisme alpin et méditerranéen depuis plus de 10 ans. Une relation de confiance bâtie sur la rigueur et la constance.
+      </p>
+    </div>
+
+    <!-- DROITE — grille logos PNG -->
+    <div class="grid grid-cols-3 gap-x-8 gap-y-8 items-center">
+
+      <div class="flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-200">
+        <img src="/assets/images/belambra-logo.svg" alt="Belambra" class="w-auto object-contain grayscale hover:grayscale-0 transition-all duration-200"/>
+      </div>
+
+      <div class="flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-200">
+        <img src="/assets/images/goelia.svg" alt="Pierre & Vacances" class="w-auto object-contain grayscale hover:grayscale-0 transition-all duration-200"/>
+      </div>
+
+      <div class="flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-200">
+        <img src="/assets/images/location-alpe-d-huez-logo-gris.svg" alt="Prestige Gestion" class="w-auto object-contain grayscale hover:grayscale-0 transition-all duration-200"/>
+      </div>
+
+      <div class="flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-200">
+        <img src="/assets/images/Logo-groupe_Vertical-Couleur.png" alt="Center Parcs" class="w-auto object-contain grayscale hover:grayscale-0 transition-all duration-200"/>
+      </div>
+
+      <div class="flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-200">
+        <img src="/assets/images/pierreetvacances-logo.png" alt="Vacancéole" class="w-auto object-contain grayscale hover:grayscale-0 transition-all duration-200"/>
+      </div>
+
+      <div class="flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-200">
+        <img src="/assets/images/odalys-logo.png" alt="Odalys" class="w-auto object-contain grayscale hover:grayscale-0 transition-all duration-200"/>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!--- SECTION CTA FINAL --->
+<section class="w-full py-16 bg-white border-t-4 border-[#1a7e6c]">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="flex flex-col items-center text-center">
+
+      <h2 class="text-3xl lg:text-4xl font-bold text-[#244163] leading-tight mb-4 max-w-2xl">
+        Un référent terrain dédié à votre résidence.
+      </h2>
+
+      <p class="text-[#6b7a8d] text-base mb-8 max-w-xl leading-relaxed">
+        Pour chacune de vos résidences, un référent terrain (minimum) vous est dédié : ce qui favorise un suivi personnalisé des équipes sur place, et une communication transparente.      </p>
+      <div class="flex flex-wrap justify-center gap-3 mb-10">
+        <span class="inline-flex items-center gap-1.5 text-[0.75rem] font-medium px-3.5 py-2 rounded-full bg-[#e8f5f2] border border-[#c2e8df] text-[#1a7e6c]">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="#1a7e6c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Devis gratuit sous 24h
+        </span>
+        <span class="inline-flex items-center gap-1.5 text-[0.75rem] font-medium px-3.5 py-2 rounded-full bg-[#e8f5f2] border border-[#c2e8df] text-[#1a7e6c]">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="#1a7e6c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Intervention 7j/7
+        </span>
+        <span class="inline-flex items-center gap-1.5 text-[0.75rem] font-medium px-3.5 py-2 rounded-full bg-[#eef2f7] border border-[#c5d3e8] text-[#244163]">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="#244163" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Traçabilité garantie 
+        </span>
+      </div>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="tel:+33988327743"
+           class="inline-flex items-center gap-2 bg-[#244163] text-white font-semibold text-sm px-8 py-4 rounded-[10px] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-[#1a3050]">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.77 19.79 19.79 0 01.15 1.18 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          Demander un devis
+        </a>
+      </div>
+      <!-- Mention rassurante -->
+      <p class="text-xs text-[#6b7a8d] mt-6">
+        Sans engagement · Réponse garantie sous 24h · Devis personnalisé et gratuit
+      </p>
+    </div>
+  </div>
+</section>
+
 <script>
 const prestData = [
   { num:"01", title:"Ménage fin de séjour", desc:"Remise à blanc complète après chaque départ. Linge intégralement changé, surfaces désinfectées, cuisine et salle de bain traitées en profondeur selon des protocoles hôteliers qui convient à votre résidence. Le logement est rendu impeccable pour accueillir les prochains vacanciers.", tags:["Remise à blanc","Standard 4★ minimum","Turnover rapide"], checks:["Changement complet du linge de lit et de bain","Désinfection salle de bain (sanitaires, joints, miroirs)","Nettoyage cuisine : plaques, micro-ondes, réfrigérateur","Dépoussiérage mobilier de haut en bas","Aspiration et lavage des sols","Rapport d'intervention et signalement d'anomalies"] },

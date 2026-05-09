@@ -150,11 +150,11 @@
     >
       <div
         id="overlay"
-        class="absolute inset-0 bg-black/50 overlay-hidden transition-opacity duration-300 z-[9998]"
+        class="absolute inset-0 bg-black/50 overlay-hidden transition-opacity duration-300 z-9998"
       ></div>
       <div
         id="panel"
-        class="absolute top-0 left-0 h-full bg-white shadow-2xl menu-closed transition-transform duration-300 z-[9999]"
+        class="absolute top-0 left-0 h-full bg-white shadow-2xl menu-closed transition-transform duration-300 z-9999"
       >
         <div
           class="p-8 border-b border-gray-100 flex items-center justify-between"
@@ -165,24 +165,21 @@
             width="140px"
           />
 
-          <button
-            id="btnClose"
-            class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 hover:border-[#244163] hover:bg-[#244163] transition-all group"
-          >
-            <svg
-              class="w-5 h-5 text-gray-600 group-hover:text-white transition-colors"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
+<button
+  id="btnClose"
+  class="w-10 h-10 flex items-center justify-center rounded-full bg-[#1a7e6c] hover:bg-[#159070] transition-all duration-200 hover:scale-105"
+>
+  <svg
+    class="w-4 h-4"
+    fill="none"
+    stroke="#fff"
+    viewBox="0 0 24 24"
+    stroke-width="2.5"
+    stroke-linecap="round"
+  >
+    <path d="M6 18L18 6M6 6l12 12"/>
+  </svg>
+</button>
         </div>
 
         <!-- Navigation -->

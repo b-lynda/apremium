@@ -55,6 +55,8 @@ if (bouton && menu && overlay && panel) {
             overlay.classList.remove('overlay-visible');
             overlay.classList.add('overlay-hidden');
             menu.classList.add('pointer-events-none');
+            bouton.style.opacity = "1";       
+            bouton.style.pointerEvents = "auto";
             
             // 🔓 RÉACTIVER LE SCROLL (1 ligne)
             document.body.classList.remove('menu-is-open');
@@ -77,6 +79,8 @@ if (bouton && menu && overlay && panel) {
             overlay.classList.remove('overlay-hidden');
             overlay.classList.add('overlay-visible');
             menu.classList.remove('pointer-events-none');
+            bouton.style.opacity = "0";      
+            bouton.style.pointerEvents = "none";
             
             // 🔒 BLOQUER LE SCROLL (1 ligne)
             document.body.classList.add('menu-is-open');
@@ -105,6 +109,8 @@ if (btnClose) {
         overlay.classList.remove('overlay-visible');
         overlay.classList.add('overlay-hidden');
         menu.classList.add('pointer-events-none');
+        bouton.style.opacity = "1";        
+        bouton.style.pointerEvents = "auto";
         
         // 🔓 RÉACTIVER LE SCROLL (1 ligne)
         document.body.classList.remove('menu-is-open');
@@ -130,6 +136,8 @@ if (overlay) {
         overlay.classList.remove('overlay-visible');
         overlay.classList.add('overlay-hidden');
         menu.classList.add('pointer-events-none');
+        bouton.style.opacity = "1";        
+        bouton.style.pointerEvents = "auto"; 
         
         // 🔓 RÉACTIVER LE SCROLL (1 ligne)
         document.body.classList.remove('menu-is-open');
