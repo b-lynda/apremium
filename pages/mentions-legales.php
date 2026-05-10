@@ -74,7 +74,7 @@
         <div class="item-card bg-white rounded-r-lg border-l-2 border-l-[#1a7e6c] border-t border-r border-b border-[#e2eae7] p-4">
           <p class="text-[10px] text-[#244163] uppercase tracking-[1.5px] font-bold mb-2">Siège social</p>
           <p class="text-[13px] text-[#555] leading-relaxed">
-            8 Avenue Potié<br>
+            8 AVENUE POTIE<br>
             38400 Saint Martin d'Hères, France<br>
             <br>
             <a href="mailto:contact@anyx-premium.fr" class="text-[#1a7e6c] hover:underline">Nous contacter par courriel</a><br>

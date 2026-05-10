@@ -150,14 +150,16 @@
               </p>
 
               <div
-                class="flex flex-col md:flex-row justify-between w-full items-center gap-4"
+                class="flex flex-col md:flex-row justify-between text-center w-full items-center gap-4"
               >
-                <p class="text-white text-xs">
-                  © 2025 - A + PREMIUM GROUP • Tous droits réservés.
+                <p class="text-white text-xs px-2 text-center md:text-left">
+                  © 2025 - A + PREMIUM GROUP • Tous droits réservés. 
+              • Créer par <a href="https://www.synelbe.fr" 
+                  class="text-white hover:underline">Synelbé</a>
                 </p>
 
                 <div class="flex gap-2.5">
-                  <a href="" class="text-white text-xs hover:underline"
+                  <a href="/pages/contactez-nous.php" class="text-white text-xs hover:underline"
                     >Contactez-nous</a
                   >
                   <a href="/pages/mentions-legales.php" class="text-white text-xs hover:underline"
