@@ -5,6 +5,7 @@
     <meta name="robots" content="index, follow">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="/assets/images/favicon-apg.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"
       rel="stylesheet"

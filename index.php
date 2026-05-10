@@ -219,7 +219,7 @@
           <h3
             class="relative z-10 font-bold text-[#1a7e6c] text-xl mb-4 text-right"
           >
-            Syndic-Collectivités
+            Copro-Collectivités
           </h3>
           <p
             class="relative z-10 text-right opacity-80 leading-relaxed text-gray-700"

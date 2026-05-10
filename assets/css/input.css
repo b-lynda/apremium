@@ -277,3 +277,38 @@ video {
     to { width: 100%; }
   }
 }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes underlineGrow {
+      from { transform: scaleX(0); }
+      to   { transform: scaleX(1); }
+    }
+ 
+    .fade-up { opacity: 0; animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) forwards; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.25s; }
+    .delay-3 { animation-delay: 0.45s; }
+ 
+    .ul-green {
+      display: inline-block;
+      position: relative;
+    }
+    .ul-green::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: -3px;
+      width: 100%; height: 3px;
+      background: #1a7e6c;
+      border-radius: 2px;
+      transform-origin: left;
+      animation: underlineGrow 0.8s 0.5s cubic-bezier(0.22,1,0.36,1) both;
+    }
+ 
+    .item-card { transition: box-shadow 0.2s ease; }
+    .item-card:hover { box-shadow: 0 4px 20px rgba(26,126,108,0.1); }
+ 
+    .cookie-card { transition: box-shadow 0.2s ease; }
+    .cookie-card:hover { box-shadow: 0 4px 20px rgba(26,126,108,0.1); }

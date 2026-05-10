@@ -322,7 +322,7 @@
               </li>
             </ul>
             <a
-              href="#"
+              href="/pages/mentions-legales.php"
               class="menu-link flex items-center gap-3 px-4 py-3 text-gray-700 transition-all duration-200"
             >
               <span class="font-medium">Mentions légales</span>
