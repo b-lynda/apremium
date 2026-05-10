@@ -317,16 +317,27 @@
                       Travaux publics
                     </a>
                   </li>
+                  
                 </ul>
-
               </li>
             </ul>
-            <a
+            <div>
+<a
               href="/pages/mentions-legales.php"
               class="menu-link flex items-center gap-3 px-4 py-3 text-gray-700 transition-all duration-200"
             >
               <span class="font-medium">Mentions légales</span>
             </a>
+            <a
+              href="/pages/contactez-nous.php"
+              class="menu-link flex items-center gap-3 px-4 py-3 text-gray-700 transition-all duration-200"
+            >
+              <span class="font-medium">Contactez-nous</span>
+            </a>
+
+            </div>
+            
+           
           </div>
         </nav>
 
@@ -345,13 +356,16 @@
               ><img src="/assets/images/whatsapp.png" alt="" width="26px"
             /></a>
           </div>
-          <a
-            href="tel:+33988327743"
-            class="block w-full py-4 text-center bg-linear-to-r from-[#1a7e6c] to-[#244163] text-white rounded-xl font-bold shadow-lg hover:bg-[#1a3550] transition-colors"
-          >
-            Contactez-nous
-          </a>
         </div>
+        <div class="flex flex-wrap gap-4 justify-center">
+        <a href="tel:+33988327743"
+           class="inline-flex items-center gap-2 bg-linear-to-r from-[#1a7e6c] to-[#244163] text-white font-semibold text-sm px-14 py-4 rounded-[10px] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-[#1a3050]">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.77 19.79 19.79 0 01.15 1.18 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          Appelez-nous
+        </a>
+      </div>
       </div>
     </div>
 

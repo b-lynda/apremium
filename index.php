@@ -133,36 +133,38 @@
       <!-- Service Cards -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
         <!-- Card Tourisme -->
-        <div
-          class="relative h-[200px] flex flex-col justify-center items-end p-12 rounded-tr-4xl rounded-br-4xl rounded-bl-4xl bg-white/10 backdrop-blur-lg backdrop-saturate-150 border border-white/20 overflow-hidden transition-all shadow-lg hover:shadow-2xl hover:border-white/40 hover:bg-white/15 group"
-        >
-          <div
-            class="absolute inset-0 from-white/10 via-transparent to-transparent pointer-events-none"
-          ></div>
-          <div
-            class="absolute inset-0 from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-          ></div>
-          <div
-            class="absolute left-0 top-1/2 -translate-y-1/2 z-0 opacity-15 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500"
-          >
-            <img
-              src="/assets/images/hotel (1).svg"
-              alt="hotel icon"
-              class="w-[150px] h-[150px] -rotate-12 group-hover:-rotate-6 transition-transform duration-500"
-              style="filter: drop-shadow(0 0 20px #1a7e6c)"
-            />
-          </div>
-          <h3
-            class="relative z-10 font-bold text-[#1a7e6c] text-xl mb-4 text-right"
-          >
-            Tourisme
-          </h3>
-          <p
-            class="relative z-10 text-right opacity-80 leading-relaxed text-gray-700"
-          >
-            Résidences hôtelières, chalets, clubs de vacances, campings.
-          </p>
-        </div>
+  <a href="/pages/tourisme.php" class="block group">
+  <div
+    class="relative h-[200px] flex flex-col justify-center items-end p-12 rounded-tr-4xl rounded-br-4xl rounded-bl-4xl bg-white/10 backdrop-blur-lg backdrop-saturate-150 border border-white/20 overflow-hidden transition-all shadow-lg hover:shadow-2xl hover:border-white/40 hover:bg-white/15"
+  >
+    <div
+      class="absolute inset-0 from-white/10 via-transparent to-transparent pointer-events-none"
+    ></div>
+    <div
+      class="absolute inset-0 from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+    ></div>
+    <div
+      class="absolute left-0 top-1/2 -translate-y-1/2 z-0 opacity-15 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500"
+    >
+      <img
+        src="/assets/images/hotel (1).svg"
+        alt="hotel icon"
+        class="w-[150px] h-[150px] -rotate-12 group-hover:-rotate-6 transition-transform duration-500"
+        style="filter: drop-shadow(0 0 20px #1a7e6c)"
+      />
+    </div>
+    <h3
+      class="relative z-10 font-bold text-[#1a7e6c] text-xl mb-4 text-right"
+    >
+      Tourisme
+    </h3>
+    <p
+      class="relative z-10 text-right opacity-80 leading-relaxed text-gray-700"
+    >
+      Résidences hôtelières, chalets, clubs de vacances, campings.
+    </p>
+  </div>
+</a>
 
         <!-- Card Tertiaire -->
         <div
@@ -196,37 +198,39 @@
           </p>
         </div>
 
-        <!-- Card Syndic-Copro -->
-        <div
-          class="relative h-[200px] flex flex-col justify-center items-end p-12 rounded-tr-4xl rounded-br-4xl rounded-bl-4xl bg-white/10 backdrop-blur-lg backdrop-saturate-150 border border-white/20 overflow-hidden transition-all shadow-lg hover:shadow-2xl hover:border-white/40 hover:bg-white/15 group"
-        >
-          <div
-            class="absolute inset-0 from-white/10 via-transparent to-transparent pointer-events-none"
-          ></div>
-          <div
-            class="absolute inset-0 from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-          ></div>
-          <div
-            class="absolute left-0 top-1/2 -translate-y-1/2 z-0 opacity-15 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500"
-          >
-            <img
-              src="/assets/images/bureau.svg"
-              alt="bureau icon"
-              class="w-[150px] h-[150px] -rotate-12 group-hover:-rotate-6 transition-transform duration-500"
-              style="filter: drop-shadow(0 0 20px #1a7e6c)"
-            />
-          </div>
-          <h3
-            class="relative z-10 font-bold text-[#1a7e6c] text-xl mb-4 text-right"
-          >
-            Copro-Collectivités
-          </h3>
-          <p
-            class="relative z-10 text-right opacity-80 leading-relaxed text-gray-700"
-          >
-            Copropriétés, mairies, écoles, gymnases, salles de sport.
-          </p>
-        </div>
+        <!-- Card Copro-Collectivités -->
+        <a href="/pages/collectivites.php" class="block group">
+  <div
+    class="relative h-[200px] flex flex-col justify-center items-end p-12 rounded-tr-4xl rounded-br-4xl rounded-bl-4xl bg-white/10 backdrop-blur-lg backdrop-saturate-150 border border-white/20 overflow-hidden transition-all shadow-lg hover:shadow-2xl hover:border-white/40 hover:bg-white/15"
+  >
+    <div
+      class="absolute inset-0 from-white/10 via-transparent to-transparent pointer-events-none"
+    ></div>
+    <div
+      class="absolute inset-0 from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+    ></div>
+    <div
+      class="absolute left-0 top-1/2 -translate-y-1/2 z-0 opacity-15 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500"
+    >
+      <img
+        src="/assets/images/bureau.svg"
+        alt="bureau icon"
+        class="w-[150px] h-[150px] -rotate-12 group-hover:-rotate-6 transition-transform duration-500"
+        style="filter: drop-shadow(0 0 20px #1a7e6c)"
+      />
+    </div>
+    <h3
+      class="relative z-10 font-bold text-[#1a7e6c] text-xl mb-4 text-right"
+    >
+      Copro-Collectivités
+    </h3>
+    <p
+      class="relative z-10 text-right opacity-80 leading-relaxed text-gray-700"
+    >
+      Copropriétés, mairies, écoles, gymnases, salles de sport.
+    </p>
+  </div>
+</a>
 
         <!-- Card Industrie -->
         <div
