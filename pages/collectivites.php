@@ -49,10 +49,6 @@ $jsonLd = '{
           <!-- Badge secteur -->
           <div class="mb-6">
             <span class="inline-flex items-center gap-2 bg-[#e8f5f2] border border-[#c2e8df] text-[#1a7e6c] text-[0.72rem] font-semibold px-3.5 py-1.5 rounded-md uppercase tracking-wider">
-              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="#1a7e6c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
-                <polyline points="9 22 9 12 15 12 15 22"/>
-              </svg>
               Collectivités
             </span>
           </div>
@@ -656,7 +652,6 @@ $jsonLd = '{
 
       <p class="text-[#6b7a8d] text-base mb-8 max-w-xl leading-relaxed">
 Un référent dédié à votre collectivité pour un suivi personnalisé, des comptes rendus d'intervention et une communication transparente.      </p>
-
       <div class="flex flex-wrap justify-center gap-3 mb-10">
         <span class="inline-flex items-center gap-1.5 text-[0.75rem] font-medium px-3.5 py-2 rounded-full bg-[#e8f5f2] border border-[#c2e8df] text-[#1a7e6c]">
           <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="#1a7e6c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -671,7 +666,6 @@ Un référent dédié à votre collectivité pour un suivi personnalisé, des co
           Traçabilité garantie 
         </span>
       </div>
-
       <div class="flex flex-wrap gap-4 justify-center">
         <a href="tel:+33988327743"
            class="inline-flex items-center gap-2 bg-[#244163] text-white font-semibold text-sm px-8 py-4 rounded-[10px] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-[#1a3050]">
@@ -681,14 +675,11 @@ Un référent dédié à votre collectivité pour un suivi personnalisé, des co
           Demander un devis
         </a>
       </div>
-
       <!-- Mention rassurante -->
       <p class="text-xs text-[#6b7a8d] mt-6">
         Sans engagement · Réponse garantie sous 24h · Devis personnalisé et gratuit
       </p>
-
     </div>
-
   </div>
 </section>
 

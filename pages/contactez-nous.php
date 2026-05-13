@@ -386,36 +386,18 @@ $jsonLd = '{
                SUCCÈS
           ══════════════ -->
           <div id="panel-success" class="step-panel hidden text-center py-6">
-
             <div class="w-16 h-16 rounded-full bg-[#1a7e6c]/10 border border-[#1a7e6c]/20 flex items-center justify-center mx-auto mb-6">
               <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="#1a7e6c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
             </div>
 
-            <h2 class="text-3xl font-bold text-[#244163] mb-3" style="font-family:'Outfit',sans-serif;">Demande envoyée !</h2>
+            <h2 class="text-3xl font-bold text-[#244163] mb-3">Demande envoyée !</h2>
             <p class="text-[#6b7280] text-base leading-relaxed mb-8 max-w-sm mx-auto">
-              Merci pour votre demande. L'équipe <strong class="text-[#244163] font-semibold">ANYX PREMIUM</strong> vous recontactera sous <strong class="text-[#1a7e6c] font-semibold">24h ouvrées</strong> avec un devis personnalisé.
+              Merci pour votre demande. L'équipe <strong class="text-[#244163] font-semibold">A+ PREMIUM GROUP</strong> 
+              vous recontactera sous <strong class="text-[#1a7e6c] font-semibold">24h ouvrées</strong> avec une réponse personnalisée à votre demande.
             </p>
-
-            <div class="flex flex-wrap justify-center gap-5">
-              <div class="flex items-center gap-2 text-sm text-gray-400">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#1a7e6c] shrink-0"></span>
-                Confirmation par email
-              </div>
-              <div class="flex items-center gap-2 text-sm text-gray-400">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#1a7e6c] shrink-0"></span>
-                Réponse sous 24h
-              </div>
-              <div class="flex items-center gap-2 text-sm text-gray-400">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#1a7e6c] shrink-0"></span>
-                Devis gratuit
-              </div>
-            </div>
-
           </div>
-
-
         </div>
       </div>
     </div>

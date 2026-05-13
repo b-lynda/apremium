@@ -1136,9 +1136,6 @@
   .bg-\[\#1a7e6c\]\/10 {
     background-color: color-mix(in oklab, #1a7e6c 10%, transparent);
   }
-  .bg-\[\#1a7e6c\]\/12 {
-    background-color: color-mix(in oklab, #1a7e6c 12%, transparent);
-  }
   .bg-\[\#1a7e6c\]\/\[0\.07\] {
     background-color: color-mix(in oklab, #1a7e6c 7.000000000000001%, transparent);
   }
@@ -1397,9 +1394,6 @@
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
-  }
-  .px-12 {
-    padding-inline: calc(var(--spacing) * 12);
   }
   .px-14 {
     padding-inline: calc(var(--spacing) * 14);
@@ -2214,13 +2208,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: #1a3050;
-      }
-    }
-  }
-  .hover\:bg-\[\#1a3550\] {
-    &:hover {
-      @media (hover: hover) {
-        background-color: #1a3550;
       }
     }
   }
@@ -3318,53 +3305,6 @@ video {
       --tw-gradient-via: #0000;
       --tw-gradient-to: #0000;
       --tw-gradient-stops: initial;
-      --tw-gradient-via-stops: initial;
-      --tw-gradient-from-position: 0%;
-      --tw-gradient-via-position: 50%;
-      --tw-gradient-to-position: 100%;
-      --tw-leading: initial;
-      --tw-font-weight: initial;
-      --tw-tracking: initial;
-      --tw-shadow: 0 0 #0000;
-      --tw-shadow-color: initial;
-      --tw-shadow-alpha: 100%;
-      --tw-inset-shadow: 0 0 #0000;
-      --tw-inset-shadow-color: initial;
-      --tw-inset-shadow-alpha: 100%;
-      --tw-ring-color: initial;
-      --tw-ring-shadow: 0 0 #0000;
-      --tw-inset-ring-color: initial;
-      --tw-inset-ring-shadow: 0 0 #0000;
-      --tw-ring-inset: initial;
-      --tw-ring-offset-width: 0px;
-      --tw-ring-offset-color: #fff;
-      --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-blur: initial;
-      --tw-brightness: initial;
-      --tw-contrast: initial;
-      --tw-grayscale: initial;
-      --tw-hue-rotate: initial;
-      --tw-invert: initial;
-      --tw-opacity: initial;
-      --tw-saturate: initial;
-      --tw-sepia: initial;
-      --tw-drop-shadow: initial;
-      --tw-drop-shadow-color: initial;
-      --tw-drop-shadow-alpha: 100%;
-      --tw-drop-shadow-size: initial;
-      --tw-backdrop-blur: initial;
-      --tw-backdrop-brightness: initial;
-      --tw-backdrop-contrast: initial;
-      --tw-backdrop-grayscale: initial;
-      --tw-backdrop-hue-rotate: initial;
-      --tw-backdrop-invert: initial;
-      --tw-backdrop-opacity: initial;
-      --tw-backdrop-saturate: initial;
-      --tw-backdrop-sepia: initial;
-      --tw-duration: initial;
-    }
-  }
-}
       --tw-gradient-via-stops: initial;
       --tw-gradient-from-position: 0%;
       --tw-gradient-via-position: 50%;

@@ -92,7 +92,7 @@
                     >Collectivités</a
                   >
                   <a
-                    href="#"
+                    href="/pages/tertiaire.php"
                     class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
                     >Tertiaire</a
                   >
@@ -279,7 +279,7 @@
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="/pages/tertiaire.php"
                       class="block px-4 py-2 text-gray-600 hover:text-[#244163] transition-colors"
                     >
                       Tertiaire
